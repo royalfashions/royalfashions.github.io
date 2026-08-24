@@ -1,7 +1,33 @@
+Yes. I’ve got your full index.html. I can add the prices directly under each of the 10 products and add a 📞 Call Now button to the contact section.
+
+I’ll use the suggested footwear prices, matched sensibly to each product:
+
+Fashion Sandals — KSh 800–1,500
+
+Fashion Sneakers — KSh 2,000–3,500
+
+Casual Shoes — KSh 1,500–2,500
+
+Classic Sandals — KSh 800–1,500
+
+Sports Sneakers — KSh 2,000–3,500
+
+Women's Footwear — KSh 1,500–3,000
+
+Premium Sandals — KSh 1,200–2,000
+
+Children's Shoes — KSh 1,000–2,000
+
+New Arrival — KSh 1,500–3,500
+
+Classic Footwear — KSh 2,000–3,500
+
+
+Use this updated code in your GitHub index.html:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="jRTIfYU1FxaNOgC_OeYRvVu2_LenE_fNNUHR99Uh23M" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -46,7 +72,6 @@
       line-height: 1.6;
     }
 
-    /* TOP BAR */
     header {
       background: linear-gradient(135deg, #050505, #191019 55%, #0b0b0b);
       color: white;
@@ -120,7 +145,6 @@
       margin-top: 3px;
     }
 
-    /* NAVIGATION */
     nav {
       background: rgba(10,10,10,.97);
       border-top: 1px solid rgba(214,168,79,.35);
@@ -145,7 +169,6 @@
       color: var(--hot-pink);
     }
 
-    /* HERO */
     .hero {
       min-height: 510px;
       display: flex;
@@ -201,7 +224,24 @@
       box-shadow: 0 12px 28px rgba(233,30,140,.5);
     }
 
-    /* SECTION TITLE */
+    .call-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #138f3e, #25D366);
+      color: white;
+      padding: 13px 27px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      margin-left: 8px;
+      box-shadow: 0 8px 22px rgba(37,211,102,.25);
+      transition: transform .25s, box-shadow .25s;
+    }
+
+    .call-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(37,211,102,.4);
+    }
+
     .section-title {
       text-align: center;
       margin-bottom: 28px;
@@ -225,7 +265,6 @@
       border-radius: 5px;
     }
 
-    /* PRODUCTS */
     .products {
       padding: 60px 15px;
       max-width: 1200px;
@@ -272,6 +311,13 @@
     .product p {
       color: #666;
       font-size: 14px;
+      margin: 0 10px 8px;
+    }
+
+    .price {
+      color: var(--pink);
+      font-size: 17px;
+      font-weight: 700;
       margin: 0 10px 14px;
     }
 
@@ -291,7 +337,6 @@
       transform: scale(1.04);
     }
 
-    /* ABOUT */
     .about {
       background:
         linear-gradient(135deg, rgba(233,30,140,.94), rgba(170,20,100,.96)),
@@ -315,7 +360,6 @@
       font-size: 17px;
     }
 
-    /* FEATURES */
     .features {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -350,7 +394,6 @@
       color: #666;
     }
 
-    /* CONTACT */
     .contact {
       background: #fff;
       text-align: center;
@@ -365,7 +408,13 @@
       margin-bottom: 20px;
     }
 
-    /* FOOTER */
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
     footer {
       background: #080808;
       color: white;
@@ -379,7 +428,6 @@
       color: var(--hot-pink);
     }
 
-    /* MOBILE */
     @media (max-width: 700px) {
       .logo {
         width: 120px;
@@ -421,9 +469,18 @@
         font-size: 12px;
       }
 
+      .price {
+        font-size: 14px;
+      }
+
       .order-btn {
         font-size: 11px;
         padding: 9px 10px;
+      }
+
+      .call-btn,
+      .btn {
+        margin: 5px;
       }
     }
 
@@ -475,6 +532,7 @@
         <img src="product-1.jpg" alt="Fashion sandals">
         <h3>Fashion Sandals</h3>
         <p>Stylish and comfortable</p>
+        <div class="price">KSh 800–1,500</div>
         <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Fashion%20Sandals.">💬 Order on WhatsApp</a>
       </div>
 
@@ -482,6 +540,7 @@
         <img src="product-2.jpg" alt="Fashion sneakers">
         <h3>Fashion Sneakers</h3>
         <p>Trendy everyday footwear</p>
+        <div class="price">KSh 2,000–3,500</div>
         <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Fashion%20Sneakers.">💬 Order on WhatsApp</a>
       </div>
 
@@ -489,6 +548,7 @@
         <img src="product-3.jpg" alt="Casual shoes">
         <h3>Casual Shoes</h3>
         <p>Perfect for everyday wear</p>
+        <div class="price">KSh 1,500–2,500</div>
         <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Casual%20Shoes.">💬 Order on WhatsApp</a>
       </div>
 
@@ -496,6 +556,7 @@
         <img src="product-4.jpg" alt="Classic sandals">
         <h3>Classic Sandals</h3>
         <p>Elegant and comfortable</p>
+        <div class="price">KSh 800–1,500</div>
         <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Classic%20Sandals.">💬 Order on WhatsApp</a>
       </div>
 
@@ -503,6 +564,7 @@
         <img src="product-5.jpg" alt="Sports sneakers">
         <h3>Sports Sneakers</h3>
         <p>Modern sporty designs</p>
+        <div class="price">KSh 2,000–3,500</div>
         <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Sports%20Sneakers.">💬 Order on WhatsApp</a>
       </div>
 
@@ -510,6 +572,7 @@
         <img src="product-6.jpg" alt="Women's footwear">
         <h3>Women's Footwear</h3>
         <p>Beautiful styles for every occasion</p>
+        <div class="price">KSh 1,500–3,000</div>
         <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Women's%20Footwear.">💬 Order on WhatsApp</a>
       </div>
 
@@ -517,6 +580,7 @@
         <img src="product-7.jpg" alt="Premium sandals">
         <h3>Premium Sandals</h3>
         <p>Stylish and fashionable</p>
+        <div class="price">KSh 1,200–2,000</div>
         <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Premium%20Sandals.">💬 Order on WhatsApp</a>
       </div>
 
@@ -524,6 +588,7 @@
         <img src="product-8.jpg" alt="Children's shoes">
         <h3>Children's Shoes</h3>
         <p>Smart and comfortable</p>
+        <div class="price">KSh 1,000–2,000</div>
         <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Children's%20Shoes.">💬 Order on WhatsApp</a>
       </div>
 
@@ -531,6 +596,7 @@
         <img src="product-9.jpg" alt="New arrival">
         <h3>New Arrival</h3>
         <p>Latest fashion styles</p>
+        <div class="price">KSh 1,500–3,500</div>
         <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20the%20New%20Arrival.">💬 Order on WhatsApp</a>
       </div>
 
@@ -538,6 +604,7 @@
         <img src="product-10.jpg" alt="Classic footwear">
         <h3>Classic Footwear</h3>
         <p>Quality and style</p>
+        <div class="price">KSh 2,000–3,500</div>
         <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Classic%20Footwear.">💬 Order on WhatsApp</a>
       </div>
 
@@ -574,9 +641,16 @@
   <section class="contact" id="contact">
     <h2>Contact Royal Fashions</h2>
     <p>📍 Thika, Kenya</p>
-    <a class="btn" href="https://wa.me/254102160263">
-      💬 Chat With Us on WhatsApp
-    </a>
+
+    <div class="contact-buttons">
+      <a class="btn" href="https://wa.me/254102160263">
+        💬 Chat With Us on WhatsApp
+      </a>
+
+      <a class="call-btn" href="tel:+254102160263">
+        📞 Call Now
+      </a>
+    </div>
   </section>
 
   <footer>
