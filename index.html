@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Royal Fashions - Quality shoes, sandals and fashion footwear in Thika, Kenya.">
+  <meta name="theme-color" content="#e91e8c">
+
+  <title>Royal Fashions | Thika, Kenya</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --pink: #e91e8c;
+      --hot-pink: #ff3da8;
+      --gold: #d6a84f;
+      --dark: #090909;
+      --cream: #fff8ef;
+      --soft-pink: #fff0f8;
+      --text: #222;
+      --green: #25D366;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Montserrat", Arial, sans-serif;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(233,30,140,.08), transparent 28%),
+        radial-gradient(circle at 90% 30%, rgba(214,168,79,.10), transparent 30%),
+        var(--cream);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* TOP BAR */
+    header {
+      background: linear-gradient(135deg, #050505, #191019 55%, #0b0b0b);
+      color: white;
+      text-align: center;
+      padding: 24px 15px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border: 1px solid rgba(214,168,79,.35);
+      border-radius: 50%;
+      top: -160px;
+      left: -80px;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border: 1px solid rgba(233,30,140,.35);
+      border-radius: 50%;
+      bottom: -190px;
+      right: -70px;
+    }
+
+    .logo {
+      width: 145px;
+      height: 145px;
+      object-fit: contain;
+      background: white;
+      border-radius: 50%;
+      border: 4px solid var(--gold);
+      padding: 4px;
+      margin-bottom: 8px;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 0 25px rgba(214,168,79,.28);
+    }
+
+    header h1 {
+      font-family: "Playfair Display", Georgia, serif;
+      color: #fff;
+      font-size: clamp(32px, 7vw, 52px);
+      letter-spacing: 3px;
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 span {
+      color: var(--hot-pink);
+    }
+
+    header p {
+      color: #eee;
+      font-size: 14px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .tagline {
+      color: var(--gold) !important;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 3px;
+    }
+
+    /* NAVIGATION */
+    nav {
+      background: rgba(10,10,10,.97);
+      border-top: 1px solid rgba(214,168,79,.35);
+      border-bottom: 2px solid var(--pink);
+      padding: 13px 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 700;
+      font-size: 14px;
+      transition: .25s;
+    }
+
+    nav a:hover {
+      color: var(--hot-pink);
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 510px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 55px 20px;
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(rgba(0,0,0,.22), rgba(0,0,0,.35)),
+        url("hero-banner.png") center center / cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 760px;
+      padding: 30px 22px;
+      color: white;
+      text-shadow: 0 2px 15px rgba(0,0,0,.55);
+    }
+
+    .hero h2 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(38px, 8vw, 68px);
+      line-height: 1.05;
+      margin-bottom: 12px;
+    }
+
+    .hero h2 span {
+      color: #ff5db4;
+    }
+
+    .hero p {
+      font-size: clamp(16px, 3vw, 21px);
+      margin-bottom: 25px;
+      font-weight: 500;
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--pink), var(--hot-pink));
+      color: white;
+      padding: 13px 27px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 8px 22px rgba(233,30,140,.35);
+      transition: transform .25s, box-shadow .25s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(233,30,140,.5);
+    }
+
+    /* SECTION TITLE */
+    .section-title {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .section-title h2 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(30px, 6vw, 42px);
+      color: #161616;
+    }
+
+    .section-title h2 span {
+      color: var(--pink);
+    }
+
+    .gold-line {
+      width: 80px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--pink), var(--gold));
+      margin: 9px auto 0;
+      border-radius: 5px;
+    }
+
+    /* PRODUCTS */
+    .products {
+      padding: 60px 15px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+      gap: 22px;
+    }
+
+    .product {
+      background: rgba(255,255,255,.95);
+      border: 1px solid rgba(214,168,79,.38);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 7px 24px rgba(20,10,15,.10);
+      text-align: center;
+      padding-bottom: 18px;
+      transition: transform .3s, box-shadow .3s;
+      position: relative;
+    }
+
+    .product:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(20,10,15,.18);
+    }
+
+    .product img {
+      width: 100%;
+      height: 245px;
+      object-fit: cover;
+      display: block;
+      background: #f6e5ed;
+    }
+
+    .product h3 {
+      font-family: "Playfair Display", Georgia, serif;
+      margin: 15px 10px 6px;
+      font-size: 20px;
+    }
+
+    .product p {
+      color: #666;
+      font-size: 14px;
+      margin: 0 10px 14px;
+    }
+
+    .order-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #19b957, var(--green));
+      color: white;
+      text-decoration: none;
+      padding: 10px 17px;
+      border-radius: 22px;
+      font-weight: 700;
+      font-size: 13px;
+      transition: transform .2s;
+    }
+
+    .order-btn:hover {
+      transform: scale(1.04);
+    }
+
+    /* ABOUT */
+    .about {
+      background:
+        linear-gradient(135deg, rgba(233,30,140,.94), rgba(170,20,100,.96)),
+        url("hero-banner.png") center / cover;
+      color: white;
+      text-align: center;
+      padding: 65px 20px;
+      position: relative;
+    }
+
+    .about h2,
+    .contact h2 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 36px;
+      margin-bottom: 14px;
+    }
+
+    .about p {
+      max-width: 720px;
+      margin: auto;
+      font-size: 17px;
+    }
+
+    /* FEATURES */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      max-width: 1000px;
+      margin: -30px auto 0;
+      padding: 0 15px 55px;
+      position: relative;
+    }
+
+    .feature {
+      background: white;
+      border-radius: 16px;
+      padding: 22px 15px;
+      text-align: center;
+      border: 1px solid rgba(214,168,79,.35);
+      box-shadow: 0 7px 22px rgba(0,0,0,.10);
+    }
+
+    .feature .icon {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    .feature h3 {
+      color: var(--pink);
+      font-size: 16px;
+    }
+
+    .feature p {
+      font-size: 13px;
+      color: #666;
+    }
+
+    /* CONTACT */
+    .contact {
+      background: #fff;
+      text-align: center;
+      padding: 55px 20px;
+    }
+
+    .contact h2 {
+      color: var(--pink);
+    }
+
+    .contact p {
+      margin-bottom: 20px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #080808;
+      color: white;
+      text-align: center;
+      padding: 28px 15px;
+      font-size: 13px;
+      border-top: 3px solid var(--gold);
+    }
+
+    footer strong {
+      color: var(--hot-pink);
+    }
+
+    /* MOBILE */
+    @media (max-width: 700px) {
+      .logo {
+        width: 120px;
+        height: 120px;
+      }
+
+      nav a {
+        margin: 0 6px;
+        font-size: 12px;
+      }
+
+      .hero {
+        min-height: 430px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+        margin-top: -15px;
+      }
+
+      .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .product {
+        border-radius: 13px;
+      }
+
+      .product img {
+        height: 190px;
+      }
+
+      .product h3 {
+        font-size: 16px;
+      }
+
+      .product p {
+        font-size: 12px;
+      }
+
+      .order-btn {
+        font-size: 11px;
+        padding: 9px 10px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .product img {
+        height: 230px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="Logo.jpg" alt="Royal Fashions Logo" class="logo">
+    <h1>ROYAL <span>FASHIONS</span></h1>
+    <p class="tagline">Quality Fashion & Footwear</p>
+    <p>Thika, Kenya</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>Step Into <span>Style</span> 👠</h2>
+      <p>Discover beautiful footwear for every occasion.</p>
+      <a href="#products" class="btn">SHOP OUR COLLECTION</a>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <div class="section-title">
+      <h2>Our <span>Products</span></h2>
+      <div class="gold-line"></div>
+    </div>
+
+    <div class="product-grid">
+
+      <div class="product">
+        <img src="product-1.jpg" alt="Fashion sandals">
+        <h3>Fashion Sandals</h3>
+        <p>Stylish and comfortable</p>
+        <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Fashion%20Sandals.">💬 Order on WhatsApp</a>
+      </div>
+
+      <div class="product">
+        <img src="product-2.jpg" alt="Fashion sneakers">
+        <h3>Fashion Sneakers</h3>
+        <p>Trendy everyday footwear</p>
+        <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Fashion%20Sneakers.">💬 Order on WhatsApp</a>
+      </div>
+
+      <div class="product">
+        <img src="product-3.jpg" alt="Casual shoes">
+        <h3>Casual Shoes</h3>
+        <p>Perfect for everyday wear</p>
+        <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Casual%20Shoes.">💬 Order on WhatsApp</a>
+      </div>
+
+      <div class="product">
+        <img src="product-4.jpg" alt="Classic sandals">
+        <h3>Classic Sandals</h3>
+        <p>Elegant and comfortable</p>
+        <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Classic%20Sandals.">💬 Order on WhatsApp</a>
+      </div>
+
+      <div class="product">
+        <img src="product-5.jpg" alt="Sports sneakers">
+        <h3>Sports Sneakers</h3>
+        <p>Modern sporty designs</p>
+        <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Sports%20Sneakers.">💬 Order on WhatsApp</a>
+      </div>
+
+      <div class="product">
+        <img src="product-6.jpg" alt="Women's footwear">
+        <h3>Women's Footwear</h3>
+        <p>Beautiful styles for every occasion</p>
+        <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Women's%20Footwear.">💬 Order on WhatsApp</a>
+      </div>
+
+      <div class="product">
+        <img src="product-7.jpg" alt="Premium sandals">
+        <h3>Premium Sandals</h3>
+        <p>Stylish and fashionable</p>
+        <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Premium%20Sandals.">💬 Order on WhatsApp</a>
+      </div>
+
+      <div class="product">
+        <img src="product-8.jpg" alt="Children's shoes">
+        <h3>Children's Shoes</h3>
+        <p>Smart and comfortable</p>
+        <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Children's%20Shoes.">💬 Order on WhatsApp</a>
+      </div>
+
+      <div class="product">
+        <img src="product-9.jpg" alt="New arrival">
+        <h3>New Arrival</h3>
+        <p>Latest fashion styles</p>
+        <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20the%20New%20Arrival.">💬 Order on WhatsApp</a>
+      </div>
+
+      <div class="product">
+        <img src="product-10.jpg" alt="Classic footwear">
+        <h3>Classic Footwear</h3>
+        <p>Quality and style</p>
+        <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Classic%20Footwear.">💬 Order on WhatsApp</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Royal Fashions</h2>
+    <p>
+      We offer stylish and quality footwear for customers who want
+      great fashion, comfort and affordable prices. Visit us in
+      Thika, Kenya and step into your next favourite style.
+    </p>
+  </section>
+
+  <div class="features">
+    <div class="feature">
+      <div class="icon">👑</div>
+      <h3>Quality Fashion</h3>
+      <p>Beautiful styles selected for you.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">💰</div>
+      <h3>Affordable Prices</h3>
+      <p>Great style without breaking the bank.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🚚</div>
+      <h3>Convenient Shopping</h3>
+      <p>Order easily through WhatsApp.</p>
+    </div>
+  </div>
+
+  <section class="contact" id="contact">
+    <h2>Contact Royal Fashions</h2>
+    <p>📍 Thika, Kenya</p>
+    <a class="btn" href="https://wa.me/254102160263">
+      💬 Chat With Us on WhatsApp
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2026 <strong>Royal Fashions</strong>. All Rights Reserved.</p>
+    <p>Thika, Kenya • Quality Fashion & Footwear</p>
+  </footer>
+
+</body>
+</html>
