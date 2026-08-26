@@ -16,7 +16,6 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 
   <style>
@@ -424,6 +423,156 @@
       box-shadow: 0 7px 18px rgba(37,211,102,.3);
     }
 
+    /* =====================================================
+       ADVERTISING SECTION
+       ===================================================== */
+
+    .advertising {
+      padding: 70px 15px;
+      background:
+        radial-gradient(circle at 10% 20%, rgba(233,30,140,.12), transparent 30%),
+        radial-gradient(circle at 90% 80%, rgba(214,168,79,.13), transparent 30%),
+        #fff;
+      border-top: 1px solid rgba(214,168,79,.25);
+      border-bottom: 1px solid rgba(214,168,79,.25);
+    }
+
+    .advertising-container {
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .advertising-intro {
+      text-align: center;
+      max-width: 760px;
+      margin: -10px auto 30px;
+      color: #666;
+    }
+
+    .ad-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .ad-card {
+      background: linear-gradient(145deg, #111, #24131f);
+      color: white;
+      border-radius: 20px;
+      padding: 30px 20px;
+      text-align: center;
+      min-height: 270px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid rgba(214,168,79,.4);
+      box-shadow: 0 10px 30px rgba(0,0,0,.12);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ad-card::before {
+      content: "ADVERTISEMENT";
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      font-size: 8px;
+      letter-spacing: 1px;
+      color: #bbb;
+      border: 1px solid #555;
+      padding: 4px 7px;
+      border-radius: 10px;
+    }
+
+    .ad-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--pink), var(--hot-pink));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      margin-bottom: 15px;
+      box-shadow: 0 8px 25px rgba(233,30,140,.3);
+    }
+
+    .ad-card h3 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 24px;
+      margin-bottom: 7px;
+    }
+
+    .ad-card p {
+      color: #ccc;
+      font-size: 13px;
+      margin-bottom: 18px;
+    }
+
+    .ad-price {
+      color: var(--gold);
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .ad-button {
+      display: inline-block;
+      background: var(--green);
+      color: white;
+      padding: 10px 18px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .advertise-cta {
+      margin-top: 30px;
+      padding: 30px 20px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, var(--pink), #a4146c);
+      color: white;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(233,30,140,.22);
+    }
+
+    .advertise-cta h3 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 28px;
+      margin-bottom: 7px;
+    }
+
+    .advertise-cta p {
+      margin-bottom: 18px;
+      font-size: 14px;
+    }
+
+    .advertise-cta .btn {
+      background: white;
+      color: var(--pink);
+      box-shadow: none;
+    }
+
+    /* FUTURE SPONSORED BANNER */
+
+    .sponsored-banner {
+      max-width: 1150px;
+      margin: 25px auto 0;
+      padding: 16px 20px;
+      background: #fff8ef;
+      border: 1px dashed var(--gold);
+      border-radius: 14px;
+      text-align: center;
+      color: #777;
+      font-size: 12px;
+    }
+
+    .sponsored-banner strong {
+      color: var(--pink);
+    }
+
     /* TRUST */
 
     .trust-section {
@@ -550,17 +699,13 @@
 
     .map-box {
       min-height: 280px;
-
       background:
         linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
         url("hero-banner.png") center / cover;
-
       border-radius: 18px;
-
       display: flex;
       align-items: center;
       justify-content: center;
-
       text-align: center;
       padding: 25px;
       color: white;
@@ -656,8 +801,6 @@
       color: var(--hot-pink);
     }
 
-    /* NO SOCIAL ACCOUNTS CONNECTED */
-
     .social-placeholder {
       margin-top: 14px;
       color: #888;
@@ -686,7 +829,6 @@
     }
 
     @keyframes pulse {
-
       0% {
         box-shadow: 0 0 0 0 rgba(37,211,102,.55);
       }
@@ -698,7 +840,6 @@
       100% {
         box-shadow: 0 0 0 0 rgba(37,211,102,0);
       }
-
     }
 
     /* MOBILE BAR */
@@ -748,6 +889,10 @@
       }
 
       .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .ad-grid {
         grid-template-columns: 1fr;
       }
 
@@ -811,6 +956,14 @@
 
       .top-bar {
         line-height: 1.8;
+      }
+
+      .advertising {
+        padding: 55px 15px;
+      }
+
+      .ad-card {
+        min-height: 240px;
       }
 
     }
@@ -883,13 +1036,10 @@
   <nav>
 
     <a href="#home">Home</a>
-
     <a href="#products">Shop</a>
-
+    <a href="#advertise">Advertise</a>
     <a href="#about">About</a>
-
     <a href="#contact">Location</a>
-
     <a href="#contact">Contact</a>
 
   </nav>
@@ -940,60 +1090,27 @@
     <div class="quick-grid">
 
       <a class="quick-card" href="#products">
-
         <div class="quick-icon">🛍️</div>
-
         <strong>Shop Now</strong>
-
-        <small>
-          Browse our collection
-        </small>
-
+        <small>Browse our collection</small>
       </a>
 
-
-      <a
-        class="quick-card"
-        href="https://wa.me/254102160263"
-      >
-
+      <a class="quick-card" href="https://wa.me/254102160263">
         <div class="quick-icon">💬</div>
-
         <strong>WhatsApp Us</strong>
-
-        <small>
-          Ask about availability
-        </small>
-
+        <small>Ask about availability</small>
       </a>
 
-
-      <a
-        class="quick-card"
-        href="tel:+254102160263"
-      >
-
+      <a class="quick-card" href="tel:+254102160263">
         <div class="quick-icon">📞</div>
-
         <strong>Call Us</strong>
-
-        <small>
-          Speak to us directly
-        </small>
-
+        <small>Speak to us directly</small>
       </a>
-
 
       <a class="quick-card" href="#contact">
-
         <div class="quick-icon">📍</div>
-
         <strong>Visit Us</strong>
-
-        <small>
-          Find our shop
-        </small>
-
+        <small>Find our shop</small>
       </a>
 
     </div>
@@ -1024,241 +1141,258 @@
 
 
       <div class="product">
-
-        <img
-          src="product-1.jpg"
-          alt="Fashion sandals at Royal Fashions"
-          loading="lazy"
-        >
-
+        <img src="product-1.jpg" alt="Fashion sandals at Royal Fashions" loading="lazy">
         <h3>Fashion Sandals</h3>
-
-        <p>
-          Stylish and comfortable
-        </p>
-
-        <a
-          class="order-btn"
-          href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Fashion%20Sandals.%20Please%20send%20me%20the%20price%20and%20available%20sizes."
-        >
+        <p>Stylish and comfortable</p>
+        <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Fashion%20Sandals.%20Please%20send%20me%20the%20price%20and%20available%20sizes.">
           💬 Order on WhatsApp
         </a>
-
       </div>
 
 
       <div class="product">
-
-        <img
-          src="product-2.jpg"
-          alt="Fashion sneakers at Royal Fashions"
-          loading="lazy"
-        >
-
+        <img src="product-2.jpg" alt="Fashion sneakers at Royal Fashions" loading="lazy">
         <h3>Fashion Sneakers</h3>
-
-        <p>
-          Trendy everyday footwear
-        </p>
-
-        <a
-          class="order-btn"
-          href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Fashion%20Sneakers.%20Please%20send%20me%20the%20price%20and%20available%20sizes."
-        >
+        <p>Trendy everyday footwear</p>
+        <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Fashion%20Sneakers.%20Please%20send%20me%20the%20price%20and%20available%20sizes.">
           💬 Order on WhatsApp
         </a>
-
       </div>
 
 
       <div class="product">
-
-        <img
-          src="product-3.jpg"
-          alt="Casual shoes at Royal Fashions"
-          loading="lazy"
-        >
-
+        <img src="product-3.jpg" alt="Casual shoes at Royal Fashions" loading="lazy">
         <h3>Casual Shoes</h3>
-
-        <p>
-          Perfect for everyday wear
-        </p>
-
-        <a
-          class="order-btn"
-          href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Casual%20Shoes.%20Please%20send%20me%20the%20price%20and%20available%20sizes."
-        >
+        <p>Perfect for everyday wear</p>
+        <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Casual%20Shoes.%20Please%20send%20me%20the%20price%20and%20available%20sizes.">
           💬 Order on WhatsApp
         </a>
-
       </div>
 
 
       <div class="product">
-
-        <img
-          src="product-4.jpg"
-          alt="Classic sandals at Royal Fashions"
-          loading="lazy"
-        >
-
+        <img src="product-4.jpg" alt="Classic sandals at Royal Fashions" loading="lazy">
         <h3>Classic Sandals</h3>
-
-        <p>
-          Elegant and comfortable
-        </p>
-
-        <a
-          class="order-btn"
-          href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Classic%20Sandals.%20Please%20send%20me%20the%20price%20and%20available%20sizes."
-        >
+        <p>Elegant and comfortable</p>
+        <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Classic%20Sandals.%20Please%20send%20me%20the%20price%20and%20available%20sizes.">
           💬 Order on WhatsApp
         </a>
-
       </div>
 
 
       <div class="product">
-
-        <img
-          src="product-5.jpg"
-          alt="Sports sneakers at Royal Fashions"
-          loading="lazy"
-        >
-
+        <img src="product-5.jpg" alt="Sports sneakers at Royal Fashions" loading="lazy">
         <h3>Sports Sneakers</h3>
-
-        <p>
-          Modern sporty designs
-        </p>
-
-        <a
-          class="order-btn"
-          href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Sports%20Sneakers.%20Please%20send%20me%20the%20price%20and%20available%20sizes."
-        >
+        <p>Modern sporty designs</p>
+        <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Sports%20Sneakers.%20Please%20send%20me%20the%20price%20and%20available%20sizes.">
           💬 Order on WhatsApp
         </a>
-
       </div>
 
 
       <div class="product">
-
-        <img
-          src="product-6.jpg"
-          alt="Women's footwear at Royal Fashions"
-          loading="lazy"
-        >
-
+        <img src="product-6.jpg" alt="Women's footwear at Royal Fashions" loading="lazy">
         <h3>Women's Footwear</h3>
-
-        <p>
-          Beautiful styles for every occasion
-        </p>
-
-        <a
-          class="order-btn"
-          href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Women's%20Footwear.%20Please%20send%20me%20the%20price%20and%20available%20sizes."
-        >
+        <p>Beautiful styles for every occasion</p>
+        <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Women's%20Footwear.%20Please%20send%20me%20the%20price%20and%20available%20sizes.">
           💬 Order on WhatsApp
         </a>
-
       </div>
 
 
       <div class="product">
-
-        <img
-          src="product-7.jpg"
-          alt="Premium sandals at Royal Fashions"
-          loading="lazy"
-        >
-
+        <img src="product-7.jpg" alt="Premium sandals at Royal Fashions" loading="lazy">
         <h3>Premium Sandals</h3>
-
-        <p>
-          Stylish and fashionable
-        </p>
-
-        <a
-          class="order-btn"
-          href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Premium%20Sandals.%20Please%20send%20me%20the%20price%20and%20available%20sizes."
-        >
+        <p>Stylish and fashionable</p>
+        <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Premium%20Sandals.%20Please%20send%20me%20the%20price%20and%20available%20sizes.">
           💬 Order on WhatsApp
         </a>
-
       </div>
 
 
       <div class="product">
-
-        <img
-          src="product-8.jpg"
-          alt="Children's shoes at Royal Fashions"
-          loading="lazy"
-        >
-
+        <img src="product-8.jpg" alt="Children's shoes at Royal Fashions" loading="lazy">
         <h3>Children's Shoes</h3>
-
-        <p>
-          Smart and comfortable
-        </p>
-
-        <a
-          class="order-btn"
-          href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Children's%20Shoes.%20Please%20send%20me%20the%20price%20and%20available%20sizes."
-        >
+        <p>Smart and comfortable</p>
+        <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Children's%20Shoes.%20Please%20send%20me%20the%20price%20and%20available%20sizes.">
           💬 Order on WhatsApp
         </a>
-
       </div>
 
 
       <div class="product">
-
-        <img
-          src="product-9.jpg"
-          alt="New fashion arrival at Royal Fashions"
-          loading="lazy"
-        >
-
+        <img src="product-9.jpg" alt="New fashion arrival at Royal Fashions" loading="lazy">
         <h3>New Arrival</h3>
+        <p>Latest fashion styles</p>
+        <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20the%20New%20Arrival.%20Please%20send%20me%20the%20price%20and%20available%20sizes.">
+          💬 Order on WhatsApp
+        </a>
+      </div>
+
+
+      <div class="product">
+        <img src="product-10.jpg" alt="Classic footwear at Royal Fashions" loading="lazy">
+        <h3>Classic Footwear</h3>
+        <p>Quality and style</p>
+        <a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Classic%20Footwear.%20Please%20send%20me%20the%20price%20and%20available%20sizes.">
+          💬 Order on WhatsApp
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       ADVERTISING / MONETIZATION SECTION
+       ===================================================== -->
+
+  <section class="advertising" id="advertise">
+
+    <div class="advertising-container">
+
+      <div class="section-title">
+
+        <h2>
+          Advertise <span>With Us</span>
+        </h2>
+
+        <div class="gold-line"></div>
+
+      </div>
+
+      <p class="advertising-intro">
+        Put your business in front of customers visiting Royal Fashions.
+        We offer affordable advertising opportunities for businesses,
+        shops and services in Thika and beyond.
+      </p>
+
+
+      <!-- AD SLOTS -->
+
+      <div class="ad-grid">
+
+
+        <!-- AD SLOT 1 -->
+
+        <div class="ad-card">
+
+          <div class="ad-icon">
+            📢
+          </div>
+
+          <h3>Starter Ad</h3>
+
+          <p>
+            Promote your business with a featured advertising slot
+            on our website.
+          </p>
+
+          <div class="ad-price">
+            KSh 1,000 / month
+          </div>
+
+          <a
+            class="ad-button"
+            href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20the%20Starter%20advertising%20package."
+          >
+            ENQUIRE NOW
+          </a>
+
+        </div>
+
+
+        <!-- AD SLOT 2 -->
+
+        <div class="ad-card">
+
+          <div class="ad-icon">
+            ⭐
+          </div>
+
+          <h3>Business Ad</h3>
+
+          <p>
+            Get stronger visibility with a prominent featured
+            advertising position.
+          </p>
+
+          <div class="ad-price">
+            KSh 2,500 / month
+          </div>
+
+          <a
+            class="ad-button"
+            href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20the%20Business%20advertising%20package."
+          >
+            ENQUIRE NOW
+          </a>
+
+        </div>
+
+
+        <!-- AD SLOT 3 -->
+
+        <div class="ad-card">
+
+          <div class="ad-icon">
+            👑
+          </div>
+
+          <h3>Premium Ad</h3>
+
+          <p>
+            Premium visibility for businesses that want maximum
+            exposure on our website.
+          </p>
+
+          <div class="ad-price">
+            KSh 5,000 / month
+          </div>
+
+          <a
+            class="ad-button"
+            href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20the%20Premium%20advertising%20package."
+          >
+            ENQUIRE NOW
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- ADVERTISING CTA -->
+
+      <div class="advertise-cta">
+
+        <h3>
+          Own a Business?
+        </h3>
 
         <p>
-          Latest fashion styles
+          Advertise your products or services to people visiting
+          Royal Fashions online.
         </p>
 
         <a
-          class="order-btn"
-          href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20the%20New%20Arrival.%20Please%20send%20me%20the%20price%20and%20available%20sizes."
+          class="btn"
+          href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20would%20like%20to%20advertise%20my%20business%20on%20your%20website.%20Please%20send%20me%20your%20advertising%20packages."
         >
-          💬 Order on WhatsApp
+          📢 ADVERTISE WITH US
         </a>
 
       </div>
 
 
-      <div class="product">
+      <!-- FUTURE SPONSORED CONTENT AREA -->
 
-        <img
-          src="product-10.jpg"
-          alt="Classic footwear at Royal Fashions"
-          loading="lazy"
-        >
+      <div class="sponsored-banner">
 
-        <h3>Classic Footwear</h3>
-
-        <p>
-          Quality and style
-        </p>
-
-        <a
-          class="order-btn"
-          href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Classic%20Footwear.%20Please%20send%20me%20the%20price%20and%20available%20sizes."
-        >
-          💬 Order on WhatsApp
-        </a>
+        <strong>Sponsored Business Space</strong>
+        —
+        This area is available for a paid business advertisement.
 
       </div>
 
@@ -1374,8 +1508,6 @@
     <div class="contact-grid">
 
 
-      <!-- CONTACT DETAILS -->
-
       <div class="contact-card">
 
         <h3>
@@ -1407,8 +1539,6 @@
           </a>
         </p>
 
-
-        <!-- OPENING HOURS -->
 
         <div class="hours">
 
@@ -1446,8 +1576,6 @@
 
       </div>
 
-
-      <!-- GOOGLE MAPS -->
 
       <div class="map-box">
 
@@ -1529,7 +1657,7 @@
 
 
       <a
-        href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20would%20like%20to%20shop%20with%20you.%20Please%20show%20me%20your%20available products."
+        href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20would%20like%20to%20shop%20with%20you.%20Please%20show%20me%20your%20available%20products."
         class="btn btn-whatsapp"
       >
         💬 WHATSAPP US
