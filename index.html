@@ -1,231 +1,1730 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Royal Fashions in Thika, Kenya — quality fashion footwear for men, women and children. Shop our latest styles and order easily through WhatsApp.">
-  <meta name="keywords" content="Royal Fashions, shoes in Thika, sandals in Thika, footwear Kenya, fashion shoes Thika, shoes Kenya">
-  <meta name="theme-color" content="#e91e8c">
-  <meta property="og:title" content="Royal Fashions | Thika, Kenya">
-  <meta property="og:description" content="Quality fashion footwear for men, women and children. Order through WhatsApp.">
-  <meta property="og:type" content="website">
-  <title>Royal Fashions | Shoes & Fashion Footwear in Thika, Kenya</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Royal Fashions in Thika, Kenya — quality fashion footwear for men, women and children. Shop online and order through WhatsApp.">
+<meta name="keywords" content="Royal Fashions, shoes in Thika, sandals in Thika, footwear Kenya, fashion shoes Thika">
+<meta name="theme-color" content="#e91e8c"><meta property="og:title" content="Royal Fashions | Thika, Kenya">
+<meta property="og:description" content="Quality fashion footwear for men, women and children.">
+<meta property="og:type" content="website"><title>Royal Fashions | Shoes & Fashion Footwear in Thika, Kenya</title><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet"><style>
+*{box-sizing:border-box;margin:0;padding:0}
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+:root{
+--pink:#e91e8c;
+--hot-pink:#ff3da8;
+--gold:#d6a84f;
+--dark:#090909;
+--cream:#fff8ef;
+--soft-pink:#fff0f8;
+--text:#222;
+--green:#25D366;
+}
 
-  <style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    :root{--pink:#e91e8c;--hot-pink:#ff3da8;--gold:#d6a84f;--dark:#090909;--cream:#fff8ef;--soft-pink:#fff0f8;--text:#222;--green:#25D366}
-    html{scroll-behavior:smooth;scroll-padding-top:70px}
-    body{font-family:"Montserrat",Arial,sans-serif;background:radial-gradient(circle at 10% 10%,rgba(233,30,140,.08),transparent 28%),radial-gradient(circle at 90% 30%,rgba(214,168,79,.10),transparent 30%),var(--cream);color:var(--text);line-height:1.6;padding-bottom:70px}
-    .top-bar{background:#000;color:white;padding:9px 15px;text-align:center;font-size:12px;font-weight:600}
-    .top-bar a{color:white;text-decoration:none;margin:0 8px}.top-bar a:hover{color:var(--hot-pink)}
-    header{background:linear-gradient(135deg,#050505,#191019 55%,#0b0b0b);color:white;text-align:center;padding:24px 15px 20px;position:relative;overflow:hidden}
-    header:before,header:after{content:"";position:absolute;width:260px;height:260px;border:1px solid rgba(214,168,79,.35);border-radius:50%}
-    header:before{top:-160px;left:-80px}header:after{bottom:-190px;right:-70px;border-color:rgba(233,30,140,.35)}
-    .logo{width:145px;height:145px;object-fit:contain;background:white;border-radius:50%;border:4px solid var(--gold);padding:4px;margin-bottom:8px;position:relative;z-index:1;box-shadow:0 0 25px rgba(214,168,79,.28)}
-    header h1{font-family:"Playfair Display",Georgia,serif;color:white;font-size:clamp(32px,7vw,52px);letter-spacing:3px;position:relative;z-index:1}
-    header h1 span{color:var(--hot-pink)}header p{color:#eee;font-size:14px;position:relative;z-index:1}.tagline{color:var(--gold)!important;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-top:3px}
-    nav{background:rgba(10,10,10,.97);border-top:1px solid rgba(214,168,79,.35);border-bottom:2px solid var(--pink);padding:13px 10px;text-align:center;position:sticky;top:0;z-index:100;backdrop-filter:blur(8px)}
-    nav a{color:white;text-decoration:none;margin:0 9px;font-weight:700;font-size:13px;transition:.25s}nav a:hover{color:var(--hot-pink)}
-    .hero{min-height:540px;display:flex;align-items:center;justify-content:center;text-align:center;padding:55px 20px;position:relative;overflow:hidden;background:linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.55)),url("hero-banner.png") center/cover no-repeat}
-    .hero-content{max-width:800px;padding:30px 22px;color:white;text-shadow:0 2px 15px rgba(0,0,0,.65)}
-    .hero-badge{display:inline-block;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.35);border-radius:30px;padding:8px 17px;margin-bottom:17px;font-size:13px;font-weight:700}
-    .hero h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(38px,8vw,68px);line-height:1.05;margin-bottom:15px}.hero h2 span{color:#ff5db4}
-    .hero p{font-size:clamp(16px,3vw,21px);margin-bottom:27px;font-weight:500}.hero-buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
-    .btn{display:inline-block;background:linear-gradient(135deg,var(--pink),var(--hot-pink));color:white;padding:14px 27px;border-radius:30px;text-decoration:none;font-weight:800;box-shadow:0 8px 22px rgba(233,30,140,.35);transition:.25s}
-    .btn:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(233,30,140,.5)}.btn-whatsapp{background:linear-gradient(135deg,#16b957,#25D366);box-shadow:0 8px 22px rgba(37,211,102,.3)}.btn-dark{background:#111;border:1px solid rgba(255,255,255,.3)}
-    .quick-actions{max-width:1100px;margin:-38px auto 0;padding:0 15px;position:relative;z-index:5}.quick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-    .quick-card{background:white;border-radius:16px;padding:20px 12px;text-align:center;text-decoration:none;color:#222;border:1px solid rgba(214,168,79,.35);box-shadow:0 8px 25px rgba(0,0,0,.12);transition:.25s}.quick-card:hover{transform:translateY(-5px);border-color:var(--pink)}
-    .quick-icon{font-size:27px;margin-bottom:5px}.quick-card strong{display:block;color:var(--pink);font-size:14px}.quick-card small{color:#666;font-size:11px}
-    .section-title{text-align:center;margin-bottom:28px}.section-title h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(30px,6vw,42px);color:#161616}.section-title h2 span{color:var(--pink)}.section-title p{color:#666;margin-top:5px}
-    .gold-line{width:80px;height:3px;background:linear-gradient(90deg,var(--pink),var(--gold));margin:9px auto 0;border-radius:5px}
-    .products{padding:70px 15px 60px;max-width:1200px;margin:auto}.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:22px}
-    .product{background:rgba(255,255,255,.97);border:1px solid rgba(214,168,79,.38);border-radius:18px;overflow:hidden;box-shadow:0 7px 24px rgba(20,10,15,.10);text-align:center;padding-bottom:18px;transition:.3s;position:relative}
-    .product:hover{transform:translateY(-8px);box-shadow:0 15px 35px rgba(20,10,15,.18)}.product:before{content:"ORDER";position:absolute;top:12px;right:12px;background:var(--pink);color:white;font-size:9px;font-weight:800;padding:5px 8px;border-radius:20px;z-index:2}
-    .product img{width:100%;height:245px;object-fit:cover;display:block;background:#f6e5ed}.product h3{font-family:"Playfair Display",Georgia,serif;margin:15px 10px 6px;font-size:20px}.product p{color:#666;font-size:14px;margin:0 10px 14px}
-    .order-btn{display:inline-block;background:linear-gradient(135deg,#19b957,var(--green));color:white;text-decoration:none;padding:11px 17px;border-radius:22px;font-weight:800;font-size:13px;transition:.2s}.order-btn:hover{transform:scale(1.04);box-shadow:0 7px 18px rgba(37,211,102,.3)}
-    .trust-section{background:var(--soft-pink);padding:60px 15px}.trust-grid{max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.trust-card{background:white;padding:25px 16px;border-radius:17px;text-align:center;border:1px solid rgba(233,30,140,.13);box-shadow:0 6px 20px rgba(0,0,0,.07)}
-    .trust-card .big-icon{font-size:34px;margin-bottom:7px}.trust-card h3{color:var(--pink);font-size:16px;margin-bottom:5px}.trust-card p{font-size:12px;color:#666}
-    .about{background:linear-gradient(135deg,rgba(233,30,140,.94),rgba(170,20,100,.96)),url("hero-banner.png") center/cover;color:white;text-align:center;padding:70px 20px}.about h2{font-family:"Playfair Display",Georgia,serif;font-size:38px;margin-bottom:14px}.about p{max-width:760px;margin:auto;font-size:17px}
-    .contact{background:#fff;text-align:center;padding:65px 20px}.contact h2{font-family:"Playfair Display",Georgia,serif;color:var(--pink);font-size:38px;margin-bottom:10px}.contact-subtitle{color:#666;margin-bottom:28px}.contact-grid{max-width:1000px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:22px;text-align:left}
-    .contact-card{background:var(--soft-pink);border-radius:18px;padding:25px;border:1px solid rgba(233,30,140,.15)}.contact-card h3{color:var(--pink);margin-bottom:10px}.contact-card p{margin:8px 0}.contact-card a{color:var(--pink);font-weight:700;text-decoration:none}.hours{margin-top:18px;padding-top:15px;border-top:1px solid rgba(233,30,140,.15)}.hours p{line-height:1.9}
-    .map-box{min-height:280px;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url("hero-banner.png") center/cover;border-radius:18px;display:flex;align-items:center;justify-content:center;text-align:center;padding:25px;color:white}.map-box h3{color:white;font-size:24px;margin-bottom:8px}.map-box p{margin-bottom:15px}
-    /* M-PESA */
-    .mpesa-section{background:radial-gradient(circle at 10% 20%,rgba(37,211,102,.12),transparent 30%),radial-gradient(circle at 90% 80%,rgba(233,30,140,.12),transparent 30%),#f7fff9;padding:70px 20px;text-align:center}
-    .mpesa-container{max-width:850px;margin:auto}.mpesa-icon{font-size:48px;margin-bottom:8px}.mpesa-section h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(32px,7vw,46px);color:#111}.mpesa-section h2 span{color:#19b957}.mpesa-subtitle{max-width:650px;margin:15px auto 28px;color:#666}
-    .mpesa-card{background:white;border-radius:22px;padding:35px 25px;border:2px solid rgba(37,211,102,.25);box-shadow:0 12px 35px rgba(0,0,0,.10)}.mpesa-label{color:#777;font-size:12px;font-weight:800;letter-spacing:2px;margin-bottom:8px}
-    .mpesa-number{display:inline-block;font-size:clamp(30px,7vw,46px);font-weight:800;color:#19b957;letter-spacing:2px;margin-bottom:12px}.mpesa-card>p{color:#555;font-size:14px;max-width:600px;margin:0 auto 22px}
-    .mpesa-steps{max-width:600px;margin:20px auto 25px;text-align:left;background:#f5fff8;border-radius:15px;padding:18px 20px}.mpesa-steps div{padding:8px 0;color:#444;font-size:14px}.mpesa-steps strong{color:#19b957;font-size:17px;margin-right:7px}
-    .mpesa-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}.mpesa-whatsapp,.mpesa-call{display:inline-block;padding:14px 22px;border-radius:30px;color:white;text-decoration:none;font-weight:800;font-size:13px;transition:.25s}.mpesa-whatsapp{background:linear-gradient(135deg,#16b957,#25D366);box-shadow:0 8px 20px rgba(37,211,102,.25)}.mpesa-call{background:linear-gradient(135deg,var(--pink),var(--hot-pink));box-shadow:0 8px 20px rgba(233,30,140,.25)}.mpesa-whatsapp:hover,.mpesa-call:hover{transform:translateY(-3px)}.mpesa-warning{margin-top:22px!important;font-size:11px!important;color:#777!important}
-    .reviews{background:#111;color:white;padding:60px 15px;text-align:center}.reviews h2{font-family:"Playfair Display",Georgia,serif;font-size:36px}.reviews h2 span{color:var(--hot-pink)}.review-note{max-width:650px;margin:10px auto 25px;color:#ccc;font-size:14px}.review-box{max-width:700px;margin:auto;background:#1c1c1c;border:1px solid rgba(214,168,79,.35);border-radius:18px;padding:25px}.stars{color:#ffd45c;font-size:23px;letter-spacing:3px;margin-bottom:8px}.review-box p{color:#eee;font-size:14px}
-    .final-cta{background:linear-gradient(135deg,var(--pink),#a4146c);color:white;text-align:center;padding:60px 20px}.final-cta h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(32px,7vw,48px);margin-bottom:10px}.final-cta p{margin-bottom:22px}
-    footer{background:#080808;color:white;text-align:center;padding:30px 15px 90px;font-size:13px;border-top:3px solid var(--gold)}footer strong{color:var(--hot-pink)}.social-placeholder{margin-top:14px;color:#888;font-size:12px}
-    .floating-whatsapp{position:fixed;right:18px;bottom:82px;width:57px;height:57px;background:var(--green);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:27px;box-shadow:0 7px 22px rgba(0,0,0,.25);z-index:998;animation:pulse 2s infinite}
-    @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}70%{box-shadow:0 0 0 13px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
-    .mobile-contact{position:fixed;bottom:0;left:0;right:0;background:rgba(0,0,0,.96);padding:9px;display:grid;grid-template-columns:1fr 1fr;gap:8px;z-index:999;border-top:2px solid var(--gold)}.mobile-contact a{text-align:center;color:white;text-decoration:none;padding:11px 8px;border-radius:25px;font-weight:800;font-size:13px}.mobile-whatsapp{background:var(--green)}.mobile-call{background:var(--pink)}
-    @media(max-width:800px){.quick-grid,.trust-grid{grid-template-columns:repeat(2,1fr)}.contact-grid{grid-template-columns:1fr}}
-    @media(max-width:700px){.logo{width:120px;height:120px}nav{white-space:nowrap;overflow-x:auto}nav a{margin:0 6px;font-size:11px}.hero{min-height:470px}.hero-buttons{flex-direction:column;align-items:center}.hero-buttons .btn{width:min(300px,100%)}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.product{border-radius:13px}.product img{height:190px}.product h3{font-size:16px}.product p{font-size:12px}.order-btn{font-size:11px;padding:9px 10px}.top-bar{line-height:1.8}}
-    @media(max-width:390px){.product-grid{grid-template-columns:1fr}.product img{height:230px}.trust-grid{grid-template-columns:1fr}}
-  </style>
-</head>
+html{
+scroll-behavior:smooth;
+scroll-padding-top:70px;
+}
 
-<body>
+body{
+font-family:"Montserrat",Arial,sans-serif;
+background:
+radial-gradient(circle at 10% 10%,rgba(233,30,140,.08),transparent 28%),
+radial-gradient(circle at 90% 30%,rgba(214,168,79,.10),transparent 30%),
+var(--cream);
+color:var(--text);
+line-height:1.6;
+padding-bottom:70px;
+}
 
-  <div class="top-bar">
-    📍 Neema Plaza, Kenyatta Highway, Thika
-    <a href="tel:+254102160263">📞 +254 102 160 263</a>
-    <a href="https://wa.me/254102160263">💬 WhatsApp</a>
-  </div>
+.top-bar{
+background:#000;
+color:white;
+padding:9px 15px;
+text-align:center;
+font-size:12px;
+font-weight:600;
+}
 
-  <header>
-    <img src="Logo.jpg" alt="Royal Fashions Logo" class="logo">
-    <h1>ROYAL <span>FASHIONS</span></h1>
-    <p class="tagline">Quality Fashion & Footwear</p>
-    <p>Thika, Kenya</p>
-  </header>
+.top-bar a{
+color:white;
+text-decoration:none;
+margin:0 8px;
+}
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#products">Shop</a>
-    <a href="#mpesa">M-Pesa</a>
-    <a href="#about">About</a>
-    <a href="#contact">Location</a>
-    <a href="#contact">Contact</a>
-  </nav>
+.top-bar a:hover{
+color:var(--hot-pink);
+}
 
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <div class="hero-badge">✨ QUALITY • STYLE • VALUE</div>
-      <h2>Step Into <span>Style</span></h2>
-      <p>Discover stylish and quality footwear for men, women and children.</p>
-      <div class="hero-buttons">
-        <a href="#products" class="btn">🛍️ SHOP NOW</a>
-        <a href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20would%20like%20to%20see%20your%20latest%20products." class="btn btn-whatsapp">💬 SHOP ON WHATSAPP</a>
-      </div>
-    </div>
-  </section>
+header{
+background:linear-gradient(135deg,#050505,#191019 55%,#0b0b0b);
+color:white;
+text-align:center;
+padding:24px 15px 20px;
+position:relative;
+overflow:hidden;
+}
 
-  <section class="quick-actions">
-    <div class="quick-grid">
-      <a class="quick-card" href="#products"><div class="quick-icon">🛍️</div><strong>Shop Now</strong><small>Browse our collection</small></a>
-      <a class="quick-card" href="https://wa.me/254102160263"><div class="quick-icon">💬</div><strong>WhatsApp Us</strong><small>Ask about availability</small></a>
-      <a class="quick-card" href="tel:+254102160263"><div class="quick-icon">📞</div><strong>Call Us</strong><small>Speak to us directly</small></a>
-      <a class="quick-card" href="#contact"><div class="quick-icon">📍</div><strong>Visit Us</strong><small>Find our shop</small></a>
-    </div>
-  </section>
+header:before,
+header:after{
+content:"";
+position:absolute;
+width:260px;
+height:260px;
+border:1px solid rgba(214,168,79,.35);
+border-radius:50%;
+}
 
-  <section class="products" id="products">
-    <div class="section-title">
-      <h2>Our <span>Products</span></h2><div class="gold-line"></div>
-      <p>Choose your favourite style and order directly on WhatsApp.</p>
-    </div>
+header:before{
+top:-160px;
+left:-80px;
+}
 
-    <div class="product-grid">
-      <div class="product"><img src="product-1.jpg" alt="Fashion sandals at Royal Fashions" loading="lazy"><h3>Fashion Sandals</h3><p>Stylish and comfortable</p><a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Fashion%20Sandals.%20Please%20send%20me%20the%20price%20and%20available%20sizes.">💬 Order on WhatsApp</a></div>
-      <div class="product"><img src="product-2.jpg" alt="Fashion sneakers at Royal Fashions" loading="lazy"><h3>Fashion Sneakers</h3><p>Trendy everyday footwear</p><a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Fashion%20Sneakers.%20Please%20send%20me%20the%20price%20and%20available%20sizes.">💬 Order on WhatsApp</a></div>
-      <div class="product"><img src="product-3.jpg" alt="Casual shoes at Royal Fashions" loading="lazy"><h3>Casual Shoes</h3><p>Perfect for everyday wear</p><a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Casual%20Shoes.%20Please%20send%20me%20the%20price%20and%20available%20sizes.">💬 Order on WhatsApp</a></div>
-      <div class="product"><img src="product-4.jpg" alt="Classic sandals at Royal Fashions" loading="lazy"><h3>Classic Sandals</h3><p>Elegant and comfortable</p><a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Classic%20Sandals.%20Please%20send%20me%20the%20price%20and%20available%20sizes.">💬 Order on WhatsApp</a></div>
-      <div class="product"><img src="product-5.jpg" alt="Sports sneakers at Royal Fashions" loading="lazy"><h3>Sports Sneakers</h3><p>Modern sporty designs</p><a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Sports%20Sneakers.%20Please%20send%20me%20the%20price%20and%20available%20sizes.">💬 Order on WhatsApp</a></div>
-      <div class="product"><img src="product-6.jpg" alt="Women's footwear at Royal Fashions" loading="lazy"><h3>Women's Footwear</h3><p>Beautiful styles for every occasion</p><a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Women%27s%20Footwear.%20Please%20send%20me%20the%20price%20and%20available%20sizes.">💬 Order on WhatsApp</a></div>
-      <div class="product"><img src="product-7.jpg" alt="Premium sandals at Royal Fashions" loading="lazy"><h3>Premium Sandals</h3><p>Stylish and fashionable</p><a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Premium%20Sandals.%20Please%20send%20me%20the%20price%20and%20available%20sizes.">💬 Order on WhatsApp</a></div>
-      <div class="product"><img src="product-8.jpg" alt="Children's shoes at Royal Fashions" loading="lazy"><h3>Children's Shoes</h3><p>Smart and comfortable</p><a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Children%27s%20Shoes.%20Please%20send%20me%20the%20price%20and%20available%20sizes.">💬 Order on WhatsApp</a></div>
-      <div class="product"><img src="product-9.jpg" alt="New fashion arrival at Royal Fashions" loading="lazy"><h3>New Arrival</h3><p>Latest fashion styles</p><a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20the%20New%20Arrival.%20Please%20send%20me%20the%20price%20and%20available%20sizes.">💬 Order on WhatsApp</a></div>
-      <div class="product"><img src="product-10.jpg" alt="Classic footwear at Royal Fashions" loading="lazy"><h3>Classic Footwear</h3><p>Quality and style</p><a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Classic%20Footwear.%20Please%20send%20me%20the%20price%20and%20available%20sizes.">💬 Order on WhatsApp</a></div>
-    </div>
-  </section>
+header:after{
+bottom:-190px;
+right:-70px;
+border-color:rgba(233,30,140,.35);
+}
 
-  <section class="trust-section">
-    <div class="section-title"><h2>Why Shop <span>Royal Fashions?</span></h2><div class="gold-line"></div></div>
-    <div class="trust-grid">
-      <div class="trust-card"><div class="big-icon">👑</div><h3>Quality Fashion</h3><p>Beautiful styles selected for your wardrobe.</p></div>
-      <div class="trust-card"><div class="big-icon">💰</div><h3>Affordable Prices</h3><p>Great fashion without unnecessary high prices.</p></div>
-      <div class="trust-card"><div class="big-icon">💬</div><h3>Easy Ordering</h3><p>Ask about sizes, prices and availability through WhatsApp.</p></div>
-      <div class="trust-card"><div class="big-icon">🚚</div><h3>Convenient Shopping</h3><p>Contact us and arrange collection or delivery.</p></div>
-    </div>
-  </section>
+.logo{
+width:145px;
+height:145px;
+object-fit:contain;
+background:white;
+border-radius:50%;
+border:4px solid var(--gold);
+padding:4px;
+margin-bottom:8px;
+position:relative;
+z-index:1;
+box-shadow:0 0 25px rgba(214,168,79,.28);
+}
 
-  <section class="about" id="about">
-    <h2>About Royal Fashions</h2>
-    <p>Royal Fashions brings stylish and quality footwear to customers looking for great fashion, comfort and value. We serve customers in Thika and beyond, making it easy to discover your next favourite style and order directly through WhatsApp.</p>
-  </section>
+header h1{
+font-family:"Playfair Display",Georgia,serif;
+color:white;
+font-size:clamp(32px,7vw,52px);
+letter-spacing:3px;
+position:relative;
+z-index:1;
+}
 
-  <section class="contact" id="contact">
-    <h2>Visit & Contact Us</h2>
-    <p class="contact-subtitle">Ready to shop? Contact Royal Fashions today.</p>
-    <div class="contact-grid">
-      <div class="contact-card">
-        <h3>📞 Contact Details</h3>
-        <p>📍 <strong>Location:</strong><br>Neema Plaza, Opposite Zuhura Plaza,<br>Kenyatta Highway, Thika, Kenya</p>
-        <p>📱 <strong>Phone:</strong> <a href="tel:+254102160263">+254 102 160 263</a></p>
-        <p>💬 <strong>WhatsApp:</strong> <a href="https://wa.me/254102160263">Chat with us</a></p>
-        <div class="hours"><h3>🕐 Opening Hours</h3><p><strong>Monday – Friday:</strong> 8:00 AM – 8:00 PM<br><strong>Saturday:</strong> 8:00 AM – 5:00 PM<br><strong>Sunday:</strong> 2:00 PM – 8:00 PM</p></div>
-        <br>
-        <a class="btn btn-whatsapp" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20would%20like%20to%20visit%20your%20shop.%20Please%20confirm%20your%20location.">💬 CHAT WITH US</a>
-      </div>
-      <div class="map-box">
-        <div><h3>📍 Find Royal Fashions</h3><p>Neema Plaza, Opposite Zuhura Plaza<br>Kenyatta Highway, Thika</p><a class="btn" href="https://maps.app.goo.gl/DNDVSNcgLGhLmZ2KA" target="_blank" rel="noopener">🗺️ GET DIRECTIONS</a></div>
-      </div>
-    </div>
-  </section>
+header h1 span{
+color:var(--hot-pink);
+}
 
-  <!-- M-PESA PAYMENT -->
-  <section class="mpesa-section" id="mpesa">
-    <div class="mpesa-container">
-      <div class="mpesa-icon">💳</div>
-      <h2>Pay with <span>M-Pesa</span></h2>
-      <div class="gold-line"></div>
-      <p class="mpesa-subtitle">Ready to complete your order? Pay conveniently via M-Pesa and send us your payment confirmation.</p>
-      <div class="mpesa-card">
-        <div class="mpesa-label">M-PESA PAYMENT NUMBER</div>
-        <div class="mpesa-number">010 216 0263</div>
-        <p>Please confirm your order and total amount with <strong>Royal Fashions</strong> before making payment.</p>
-        <div class="mpesa-steps">
-          <div><strong>1.</strong> Confirm your order with us.</div>
-          <div><strong>2.</strong> Send the agreed amount via M-Pesa.</div>
-          <div><strong>3.</strong> Send your M-Pesa confirmation message to us.</div>
-        </div>
-        <div class="mpesa-buttons">
-          <a href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20have%20made%20an%20M-Pesa%20payment.%20My%20M-Pesa%20payment%20number%20is%20010%20216%200263.%20Please%20confirm%20my%20order." class="mpesa-whatsapp">💬 SEND PAYMENT CONFIRMATION</a>
-          <a href="tel:+254102160263" class="mpesa-call">📞 CALL TO CONFIRM</a>
-        </div>
-        <p class="mpesa-warning">🔒 For your security, only pay after confirming your order and payment details with Royal Fashions.</p>
-      </div>
-    </div>
-  </section>
+header p{
+color:#eee;
+font-size:14px;
+position:relative;
+z-index:1;
+}
 
-  <section class="reviews">
-    <h2>Our <span>Customers</span></h2>
-    <p class="review-note">We value every customer. Ask customers who have purchased from Royal Fashions to leave a genuine review about their experience.</p>
-    <div class="review-box"><div class="stars">★★★★★</div><p>Your genuine customer reviews will appear here as you collect them.</p></div>
-  </section>
+.tagline{
+color:var(--gold)!important;
+font-weight:700;
+letter-spacing:2px;
+text-transform:uppercase;
+margin-top:3px;
+}
 
-  <section class="final-cta">
-    <h2>Ready to Find Your Style?</h2>
-    <p>Browse our collection, pay via M-Pesa or speak to us directly on WhatsApp.</p>
-    <div class="hero-buttons">
-      <a href="#products" class="btn btn-dark">🛍️ SHOP NOW</a>
-      <a href="#mpesa" class="btn">💳 PAY WITH M-PESA</a>
-      <a href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20would%20like%20to%20shop.%20Please%20help%20me." class="btn btn-whatsapp">💬 WHATSAPP US</a>
-    </div>
-  </section>
+nav{
+background:rgba(10,10,10,.97);
+border-top:1px solid rgba(214,168,79,.35);
+border-bottom:2px solid var(--pink);
+padding:13px 10px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:100;
+backdrop-filter:blur(8px);
+}
 
-  <footer>
-    <p>© 2026 <strong>Royal Fashions</strong>. All Rights Reserved.</p>
-    <p>📍 Neema Plaza, Opposite Zuhura Plaza, Kenyatta Highway, Thika, Kenya</p>
-    <p>🕐 Mon–Fri: 8AM–8PM | Sat: 8AM–5PM | Sun: 2PM–8PM</p>
-    <p>💳 M-Pesa: <strong>010 216 0263</strong></p>
-    <p class="social-placeholder">Social media links coming soon.</p>
-  </footer>
+nav a{
+color:white;
+text-decoration:none;
+margin:0 9px;
+font-weight:700;
+font-size:13px;
+}
 
-  <a class="floating-whatsapp" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20would%20like%20to%20shop.%20Please%20help%20me." aria-label="Chat with Royal Fashions on WhatsApp">💬</a>
+nav a:hover{
+color:var(--hot-pink);
+}
 
-  <div class="mobile-contact">
-    <a class="mobile-whatsapp" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20would%20like%20to%20shop.%20Please%20help%20me.">💬 WHATSAPP</a>
-    <a class="mobile-call" href="tel:+254102160263">📞 CALL NOW</a>
-  </div>
+.hero{
+min-height:540px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:55px 20px;
+position:relative;
+overflow:hidden;
+background:
+linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.55)),
+url("hero-banner.png") center/cover no-repeat;
+}
 
-</body>
+.hero-content{
+max-width:800px;
+padding:30px 22px;
+color:white;
+text-shadow:0 2px 15px rgba(0,0,0,.65);
+}
+
+.hero-badge{
+display:inline-block;
+background:rgba(0,0,0,.55);
+border:1px solid rgba(255,255,255,.35);
+border-radius:30px;
+padding:8px 17px;
+margin-bottom:17px;
+font-size:13px;
+font-weight:700;
+}
+
+.hero h2{
+font-family:"Playfair Display",Georgia,serif;
+font-size:clamp(38px,8vw,68px);
+line-height:1.05;
+margin-bottom:15px;
+}
+
+.hero h2 span{
+color:#ff5db4;
+}
+
+.hero p{
+font-size:clamp(16px,3vw,21px);
+margin-bottom:27px;
+font-weight:500;
+}
+
+.hero-buttons{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+}
+
+.btn{
+display:inline-block;
+background:linear-gradient(135deg,var(--pink),var(--hot-pink));
+color:white;
+padding:14px 27px;
+border-radius:30px;
+text-decoration:none;
+font-weight:800;
+box-shadow:0 8px 22px rgba(233,30,140,.35);
+transition:.25s;
+border:0;
+cursor:pointer;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.btn-whatsapp{
+background:linear-gradient(135deg,#16b957,#25D366);
+box-shadow:0 8px 22px rgba(37,211,102,.3);
+}
+
+.btn-dark{
+background:#111;
+border:1px solid rgba(255,255,255,.3);
+}
+
+.quick-actions{
+max-width:1100px;
+margin:-38px auto 0;
+padding:0 15px;
+position:relative;
+z-index:5;
+}
+
+.quick-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:14px;
+}
+
+.quick-card{
+background:white;
+border-radius:16px;
+padding:20px 12px;
+text-align:center;
+text-decoration:none;
+color:#222;
+border:1px solid rgba(214,168,79,.35);
+box-shadow:0 8px 25px rgba(0,0,0,.12);
+transition:.25s;
+}
+
+.quick-card:hover{
+transform:translateY(-5px);
+border-color:var(--pink);
+}
+
+.quick-icon{
+font-size:27px;
+margin-bottom:5px;
+}
+
+.quick-card strong{
+display:block;
+color:var(--pink);
+font-size:14px;
+}
+
+.quick-card small{
+color:#666;
+font-size:11px;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:28px;
+}
+
+.section-title h2{
+font-family:"Playfair Display",Georgia,serif;
+font-size:clamp(30px,6vw,42px);
+color:#161616;
+}
+
+.section-title h2 span{
+color:var(--pink);
+}
+
+.gold-line{
+width:80px;
+height:3px;
+background:linear-gradient(90deg,var(--pink),var(--gold));
+margin:9px auto 0;
+border-radius:5px;
+}
+
+.products{
+padding:70px 15px 60px;
+max-width:1200px;
+margin:auto;
+}
+
+/* SEARCH */
+.shop-tools{
+max-width:900px;
+margin:0 auto 35px;
+}
+
+.search-box{
+width:100%;
+padding:15px 20px;
+border:2px solid #eee;
+border-radius:30px;
+font-size:15px;
+outline:none;
+background:white;
+box-shadow:0 5px 18px rgba(0,0,0,.06);
+}
+
+.search-box:focus{
+border-color:var(--pink);
+}
+
+.categories{
+display:flex;
+gap:9px;
+justify-content:center;
+flex-wrap:wrap;
+margin-top:15px;
+}
+
+.category-btn{
+border:1px solid #ddd;
+background:white;
+padding:9px 15px;
+border-radius:22px;
+font-weight:700;
+cursor:pointer;
+font-size:12px;
+}
+
+.category-btn.active,
+.category-btn:hover{
+background:var(--pink);
+color:white;
+border-color:var(--pink);
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+gap:22px;
+}
+
+.product{
+background:rgba(255,255,255,.97);
+border:1px solid rgba(214,168,79,.38);
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 7px 24px rgba(20,10,15,.10);
+text-align:center;
+padding-bottom:18px;
+transition:.3s;
+position:relative;
+}
+
+.product:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(20,10,15,.18);
+}
+
+.product:before{
+content:"SHOP";
+position:absolute;
+top:12px;
+right:12px;
+background:var(--pink);
+color:white;
+font-size:9px;
+font-weight:800;
+padding:5px 8px;
+border-radius:20px;
+z-index:2;
+}
+
+.product img{
+width:100%;
+height:245px;
+object-fit:cover;
+display:block;
+background:#f6e5ed;
+}
+
+.product h3{
+font-family:"Playfair Display",Georgia,serif;
+margin:15px 10px 4px;
+font-size:20px;
+}
+
+.product p{
+color:#666;
+font-size:13px;
+margin:0 10px 6px;
+}
+
+.price{
+font-size:20px;
+font-weight:800;
+color:var(--pink);
+margin:5px 0 12px;
+}
+
+.product-buttons{
+display:flex;
+justify-content:center;
+gap:7px;
+flex-wrap:wrap;
+padding:0 8px;
+}
+
+.cart-btn,
+.order-btn{
+display:inline-block;
+border:0;
+cursor:pointer;
+padding:10px 13px;
+border-radius:22px;
+font-weight:800;
+font-size:12px;
+}
+
+.cart-btn{
+background:#111;
+color:white;
+}
+
+.cart-btn:hover{
+background:var(--pink);
+}
+
+.order-btn{
+background:linear-gradient(135deg,#19b957,var(--green));
+color:white;
+}
+
+.trust-section{
+background:var(--soft-pink);
+padding:60px 15px;
+}
+
+.trust-grid{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+}
+
+.trust-card{
+background:white;
+padding:25px 16px;
+border-radius:17px;
+text-align:center;
+border:1px solid rgba(233,30,140,.13);
+box-shadow:0 6px 20px rgba(0,0,0,.07);
+}
+
+.trust-card .big-icon{
+font-size:34px;
+margin-bottom:7px;
+}
+
+.trust-card h3{
+color:var(--pink);
+font-size:16px;
+margin-bottom:5px;
+}
+
+.trust-card p{
+font-size:12px;
+color:#666;
+}
+
+.about{
+background:
+linear-gradient(135deg,rgba(233,30,140,.94),rgba(170,20,100,.96)),
+url("hero-banner.png") center/cover;
+color:white;
+text-align:center;
+padding:70px 20px;
+}
+
+.about h2{
+font-family:"Playfair Display",Georgia,serif;
+font-size:38px;
+margin-bottom:14px;
+}
+
+.about p{
+max-width:760px;
+margin:auto;
+font-size:17px;
+}
+
+.contact{
+background:#fff;
+text-align:center;
+padding:65px 20px;
+}
+
+.contact h2{
+font-family:"Playfair Display",Georgia,serif;
+color:var(--pink);
+font-size:38px;
+margin-bottom:10px;
+}
+
+.contact-subtitle{
+color:#666;
+margin-bottom:28px;
+}
+
+.contact-grid{
+max-width:1000px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:22px;
+text-align:left;
+}
+
+.contact-card{
+background:var(--soft-pink);
+border-radius:18px;
+padding:25px;
+border:1px solid rgba(233,30,140,.15);
+}
+
+.contact-card h3{
+color:var(--pink);
+margin-bottom:10px;
+}
+
+.contact-card p{
+margin:8px 0;
+}
+
+.contact-card a{
+color:var(--pink);
+font-weight:700;
+text-decoration:none;
+}
+
+.hours{
+margin-top:18px;
+padding-top:15px;
+border-top:1px solid rgba(233,30,140,.15);
+}
+
+.hours p{
+line-height:1.9;
+}
+
+.map-box{
+min-height:280px;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("hero-banner.png") center/cover;
+border-radius:18px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:25px;
+color:white;
+}
+
+.map-box h3{
+color:white;
+font-size:24px;
+margin-bottom:8px;
+}
+
+.map-box p{
+margin-bottom:15px;
+}
+
+/* MPESA */
+.mpesa-section{
+background:
+radial-gradient(circle at 10% 20%,rgba(37,211,102,.12),transparent 30%),
+radial-gradient(circle at 90% 80%,rgba(233,30,140,.12),transparent 30%),
+#f7fff9;
+padding:70px 20px;
+text-align:center;
+}
+
+.mpesa-container{
+max-width:850px;
+margin:auto;
+}
+
+.mpesa-icon{
+font-size:48px;
+margin-bottom:8px;
+}
+
+.mpesa-section h2{
+font-family:"Playfair Display",Georgia,serif;
+font-size:clamp(32px,7vw,46px);
+color:#111;
+}
+
+.mpesa-section h2 span{
+color:#19b957;
+}
+
+.mpesa-subtitle{
+max-width:650px;
+margin:15px auto 28px;
+color:#666;
+}
+
+.mpesa-card{
+background:white;
+border-radius:22px;
+padding:35px 25px;
+border:2px solid rgba(37,211,102,.25);
+box-shadow:0 12px 35px rgba(0,0,0,.10);
+}
+
+.mpesa-label{
+color:#777;
+font-size:12px;
+font-weight:800;
+letter-spacing:2px;
+margin-bottom:8px;
+}
+
+.mpesa-number{
+display:inline-block;
+font-size:clamp(30px,7vw,46px);
+font-weight:800;
+color:#19b957;
+letter-spacing:2px;
+margin-bottom:12px;
+}
+
+.mpesa-card>p{
+color:#555;
+font-size:14px;
+max-width:600px;
+margin:0 auto 22px;
+}
+
+.mpesa-steps{
+max-width:600px;
+margin:20px auto 25px;
+text-align:left;
+background:#f5fff8;
+border-radius:15px;
+padding:18px 20px;
+}
+
+.mpesa-steps div{
+padding:8px 0;
+color:#444;
+font-size:14px;
+}
+
+.mpesa-steps strong{
+color:#19b957;
+font-size:17px;
+margin-right:7px;
+}
+
+.mpesa-buttons{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:12px;
+}
+
+.mpesa-whatsapp,
+.mpesa-call{
+display:inline-block;
+padding:14px 22px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+font-weight:800;
+font-size:13px;
+}
+
+.mpesa-whatsapp{
+background:linear-gradient(135deg,#16b957,#25D366);
+}
+
+.mpesa-call{
+background:linear-gradient(135deg,var(--pink),var(--hot-pink));
+}
+
+.mpesa-warning{
+margin-top:22px!important;
+font-size:11px!important;
+color:#777!important;
+}
+
+/* GOOGLE REVIEWS */
+.google-reviews{
+background:#fff;
+padding:70px 20px;
+text-align:center;
+}
+
+.google-reviews h2{
+font-family:"Playfair Display",Georgia,serif;
+font-size:40px;
+}
+
+.google-reviews h2 span{
+color:var(--pink);
+}
+
+.google-stars{
+font-size:30px;
+color:#fbbc04;
+letter-spacing:4px;
+margin:12px 0;
+}
+
+.google-reviews p{
+max-width:650px;
+margin:0 auto 25px;
+color:#666;
+}
+
+.review-buttons{
+display:flex;
+justify-content:center;
+gap:12px;
+flex-wrap:wrap;
+}
+
+.google-btn{
+background:#4285f4;
+color:white;
+padding:14px 23px;
+border-radius:28px;
+text-decoration:none;
+font-weight:800;
+}
+
+.review-boxes{
+max-width:950px;
+margin:35px auto 0;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+}
+
+.customer-review{
+background:#fafafa;
+border:1px solid #eee;
+border-radius:16px;
+padding:20px;
+text-align:left;
+}
+
+.customer-review .stars{
+color:#fbbc04;
+font-size:18px;
+}
+
+.customer-review p{
+font-size:13px;
+margin:7px 0;
+color:#444;
+}
+
+.customer-review strong{
+font-size:12px;
+}
+
+/* FINAL CTA */
+.final-cta{
+background:linear-gradient(135deg,var(--pink),#a4146c);
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+.final-cta h2{
+font-family:"Playfair Display",Georgia,serif;
+font-size:clamp(32px,7vw,48px);
+margin-bottom:10px;
+}
+
+.final-cta p{
+margin-bottom:22px;
+}
+
+/* FOOTER */
+footer{
+background:#080808;
+color:white;
+text-align:center;
+padding:30px 15px 90px;
+font-size:13px;
+border-top:3px solid var(--gold);
+}
+
+footer strong{
+color:var(--hot-pink);
+}
+
+/* CART BUTTON */
+.cart-floating{
+position:fixed;
+right:18px;
+bottom:150px;
+width:60px;
+height:60px;
+background:#111;
+color:white;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:25px;
+box-shadow:0 7px 22px rgba(0,0,0,.3);
+z-index:997;
+cursor:pointer;
+border:2px solid var(--gold);
+}
+
+.cart-count{
+position:absolute;
+top:-4px;
+right:-4px;
+background:var(--pink);
+color:white;
+width:24px;
+height:24px;
+border-radius:50%;
+font-size:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:800;
+}
+
+/* CART PANEL */
+.cart-overlay{
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.55);
+z-index:1000;
+}
+
+.cart-panel{
+position:absolute;
+right:0;
+top:0;
+height:100%;
+width:min(440px,94%);
+background:white;
+padding:22px;
+overflow-y:auto;
+box-shadow:-10px 0 35px rgba(0,0,0,.25);
+}
+
+.cart-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #eee;
+padding-bottom:15px;
+margin-bottom:15px;
+}
+
+.cart-header h2{
+font-family:"Playfair Display",Georgia,serif;
+}
+
+.close-cart{
+border:0;
+background:#111;
+color:white;
+width:36px;
+height:36px;
+border-radius:50%;
+cursor:pointer;
+font-size:18px;
+}
+
+.cart-item{
+display:grid;
+grid-template-columns:70px 1fr;
+gap:12px;
+padding:14px 0;
+border-bottom:1px solid #eee;
+}
+
+.cart-item img{
+width:70px;
+height:70px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.cart-item h4{
+font-size:14px;
+}
+
+.cart-item-price{
+color:var(--pink);
+font-weight:800;
+font-size:13px;
+}
+
+.quantity{
+display:flex;
+align-items:center;
+gap:8px;
+margin-top:7px;
+}
+
+.quantity button{
+width:27px;
+height:27px;
+border:0;
+background:#111;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+.remove{
+background:none;
+border:0;
+color:#d00;
+font-size:11px;
+cursor:pointer;
+margin-left:8px;
+}
+
+.cart-total{
+font-size:22px;
+font-weight:800;
+text-align:right;
+padding:20px 0;
+}
+
+.checkout-btn{
+width:100%;
+background:linear-gradient(135deg,#16b957,#25D366);
+color:white;
+border:0;
+padding:15px;
+border-radius:30px;
+font-weight:800;
+font-size:15px;
+cursor:pointer;
+}
+
+/* CHECKOUT */
+.checkout{
+display:none;
+margin-top:20px;
+border-top:2px solid var(--pink);
+padding-top:20px;
+}
+
+.checkout h3{
+color:var(--pink);
+margin-bottom:12px;
+}
+
+.checkout input,
+.checkout textarea,
+.checkout select{
+width:100%;
+padding:12px;
+border:1px solid #ddd;
+border-radius:10px;
+margin-bottom:10px;
+font-family:inherit;
+outline:none;
+}
+
+.checkout input:focus,
+.checkout textarea:focus,
+.checkout select:focus{
+border-color:var(--pink);
+}
+
+.checkout textarea{
+min-height:80px;
+resize:vertical;
+}
+
+.place-order{
+width:100%;
+border:0;
+padding:14px;
+border-radius:28px;
+background:var(--pink);
+color:white;
+font-weight:800;
+cursor:pointer;
+}
+
+/* MOBILE */
+.mobile-contact{
+position:fixed;
+bottom:0;
+left:0;
+right:0;
+background:rgba(0,0,0,.96);
+padding:9px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:8px;
+z-index:999;
+border-top:2px solid var(--gold);
+}
+
+.mobile-contact a{
+text-align:center;
+color:white;
+text-decoration:none;
+padding:11px 8px;
+border-radius:25px;
+font-weight:800;
+font-size:13px;
+}
+
+.mobile-whatsapp{
+background:var(--green);
+}
+
+.mobile-call{
+background:var(--pink);
+}
+
+@media(max-width:800px){
+
+.quick-grid,
+.trust-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+.review-boxes{
+grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:700px){
+
+.logo{
+width:120px;
+height:120px;
+}
+
+nav{
+white-space:nowrap;
+overflow-x:auto;
+}
+
+nav a{
+margin:0 6px;
+font-size:11px;
+}
+
+.hero{
+min-height:470px;
+}
+
+.hero-buttons{
+flex-direction:column;
+align-items:center;
+}
+
+.hero-buttons .btn{
+width:min(300px,100%);
+}
+
+.product-grid{
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:12px;
+}
+
+.product{
+border-radius:13px;
+}
+
+.product img{
+height:190px;
+}
+
+.product h3{
+font-size:16px;
+}
+
+.product p{
+font-size:12px;
+}
+
+.price{
+font-size:17px;
+}
+
+.product-buttons{
+flex-direction:column;
+}
+
+.cart-btn,
+.order-btn{
+width:100%;
+}
+
+.top-bar{
+line-height:1.8;
+}
+
+}
+
+@media(max-width:390px){
+
+.product-grid{
+grid-template-columns:1fr;
+}
+
+.product img{
+height:230px;
+}
+
+.trust-grid{
+grid-template-columns:1fr;
+}
+
+}
+</style></head><body><div class="top-bar">
+📍 Neema Plaza, Kenyatta Highway, Thika
+<a href="tel:+254102160263">📞 +254 102 160 263</a>
+<a href="https://wa.me/254102160263">💬 WhatsApp</a>
+</div><header>
+<img src="Logo.jpg" alt="Royal Fashions Logo" class="logo">
+<h1>ROYAL <span>FASHIONS</span></h1>
+<p class="tagline">Quality Fashion & Footwear</p>
+<p>Thika, Kenya</p>
+</header><nav>
+<a href="#home">Home</a>
+<a href="#products">Shop</a>
+<a href="#mpesa">M-Pesa</a>
+<a href="#reviews">Reviews</a>
+<a href="#about">About</a>
+<a href="#contact">Location</a>
+</nav><section class="hero" id="home">
+<div class="hero-content"><div class="hero-badge">✨ QUALITY • STYLE • VALUE</div><h2>Step Into <span>Style</span></h2><p>Discover stylish and quality footwear for men, women and children.</p><div class="hero-buttons"><a href="#products" class="btn">🛍️ SHOP NOW</a>
+
+<a href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20would%20like%20to%20see%20your%20latest%20products." class="btn btn-whatsapp">
+💬 SHOP ON WHATSAPP
+</a></div></div>
+</section><section class="quick-actions"><div class="quick-grid"><a class="quick-card" href="#products">
+<div class="quick-icon">🛍️</div>
+<strong>Shop Now</strong>
+<small>Browse our collection</small>
+</a><a class="quick-card" href="https://wa.me/254102160263">
+<div class="quick-icon">💬</div>
+<strong>WhatsApp Us</strong>
+<small>Ask about availability</small>
+</a><a class="quick-card" href="tel:+254102160263">
+<div class="quick-icon">📞</div>
+<strong>Call Us</strong>
+<small>Speak to us directly</small>
+</a><a class="quick-card" href="#contact">
+<div class="quick-icon">📍</div>
+<strong>Visit Us</strong>
+<small>Find our shop</small>
+</a></div>
+</section><section class="products" id="products"><div class="section-title"><h2>Our <span>Products</span></h2><div class="gold-line"></div><p>Choose your favourite style, add it to your cart and order easily.</p></div><div class="shop-tools"><input
+type="search"
+id="searchInput"
+class="search-box"
+placeholder="🔎 Search products..."
+oninput="filterProducts()"
+
+«»
+
+<div class="categories"><button class="category-btn active" onclick="setCategory('all',this)">All</button>
+<button class="category-btn" onclick="setCategory('sandals',this)">Sandals</button>
+<button class="category-btn" onclick="setCategory('sneakers',this)">Sneakers</button>
+<button class="category-btn" onclick="setCategory('shoes',this)">Shoes</button>
+<button class="category-btn" onclick="setCategory('women',this)">Women</button>
+<button class="category-btn" onclick="setCategory('children',this)">Children</button>
+
+</div></div><div class="product-grid" id="productGrid"><!-- PRODUCT 1 --><div class="product" data-name="Fashion Sandals" data-category="sandals women" data-price="800">
+<img src="product-1.jpg" alt="Fashion Sandals at Royal Fashions" loading="lazy">
+<h3>Fashion Sandals</h3>
+<p>Stylish and comfortable</p>
+<div class="price">KSh 800</div>
+<div class="product-buttons">
+<button class="cart-btn" onclick="addToCart('Fashion Sandals',800,'product-1.jpg')">🛒 Add to Cart</button>
+<a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Fashion%20Sandals.">💬 WhatsApp</a>
+</div>
+</div><!-- PRODUCT 2 --><div class="product" data-name="Fashion Sneakers" data-category="sneakers women" data-price="1500">
+<img src="product-2.jpg" alt="Fashion Sneakers at Royal Fashions" loading="lazy">
+<h3>Fashion Sneakers</h3>
+<p>Trendy everyday footwear</p>
+<div class="price">KSh 1,500</div>
+<div class="product-buttons">
+<button class="cart-btn" onclick="addToCart('Fashion Sneakers',1500,'product-2.jpg')">🛒 Add to Cart</button>
+<a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Fashion%20Sneakers.">💬 WhatsApp</a>
+</div>
+</div><!-- PRODUCT 3 --><div class="product" data-name="Casual Shoes" data-category="shoes men" data-price="1200">
+<img src="product-3.jpg" alt="Casual Shoes at Royal Fashions" loading="lazy">
+<h3>Casual Shoes</h3>
+<p>Perfect for everyday wear</p>
+<div class="price">KSh 1,200</div>
+<div class="product-buttons">
+<button class="cart-btn" onclick="addToCart('Casual Shoes',1200,'product-3.jpg')">🛒 Add to Cart</button>
+<a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Casual%20Shoes.">💬 WhatsApp</a>
+</div>
+</div><!-- PRODUCT 4 --><div class="product" data-name="Classic Sandals" data-category="sandals women" data-price="900">
+<img src="product-4.jpg" alt="Classic Sandals at Royal Fashions" loading="lazy">
+<h3>Classic Sandals</h3>
+<p>Elegant and comfortable</p>
+<div class="price">KSh 900</div>
+<div class="product-buttons">
+<button class="cart-btn" onclick="addToCart('Classic Sandals',900,'product-4.jpg')">🛒 Add to Cart</button>
+<a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Classic%20Sandals.">💬 WhatsApp</a>
+</div>
+</div><!-- PRODUCT 5 --><div class="product" data-name="Sports Sneakers" data-category="sneakers men" data-price="1800">
+<img src="product-5.jpg" alt="Sports Sneakers at Royal Fashions" loading="lazy">
+<h3>Sports Sneakers</h3>
+<p>Modern sporty designs</p>
+<div class="price">KSh 1,800</div>
+<div class="product-buttons">
+<button class="cart-btn" onclick="addToCart('Sports Sneakers',1800,'product-5.jpg')">🛒 Add to Cart</button>
+<a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Sports%20Sneakers.">💬 WhatsApp</a>
+</div>
+</div><!-- PRODUCT 6 --><div class="product" data-name="Women's Footwear" data-category="women shoes" data-price="1000">
+<img src="product-6.jpg" alt="Women's Footwear at Royal Fashions" loading="lazy">
+<h3>Women's Footwear</h3>
+<p>Beautiful styles for every occasion</p>
+<div class="price">KSh 1,000</div>
+<div class="product-buttons">
+<button class="cart-btn" onclick="addToCart('Women’s Footwear',1000,'product-6.jpg')">🛒 Add to Cart</button>
+<a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Women%27s%20Footwear.">💬 WhatsApp</a>
+</div>
+</div><!-- PRODUCT 7 --><div class="product" data-name="Premium Sandals" data-category="sandals women" data-price="1300">
+<img src="product-7.jpg" alt="Premium Sandals at Royal Fashions" loading="lazy">
+<h3>Premium Sandals</h3>
+<p>Stylish and fashionable</p>
+<div class="price">KSh 1,300</div>
+<div class="product-buttons">
+<button class="cart-btn" onclick="addToCart('Premium Sandals',1300,'product-7.jpg')">🛒 Add to Cart</button>
+<a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Premium%20Sandals.">💬 WhatsApp</a>
+</div>
+</div><!-- PRODUCT 8 --><div class="product" data-name="Children's Shoes" data-category="children shoes" data-price="700">
+<img src="product-8.jpg" alt="Children's Shoes at Royal Fashions" loading="lazy">
+<h3>Children's Shoes</h3>
+<p>Smart and comfortable</p>
+<div class="price">KSh 700</div>
+<div class="product-buttons">
+<button class="cart-btn" onclick="addToCart('Children’s Shoes',700,'product-8.jpg')">🛒 Add to Cart</button>
+<a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Children%27s%20Shoes.">💬 WhatsApp</a>
+</div>
+</div><!-- PRODUCT 9 --><div class="product" data-name="New Arrival" data-category="women shoes" data-price="1500">
+<img src="product-9.jpg" alt="New Arrival at Royal Fashions" loading="lazy">
+<h3>New Arrival</h3>
+<p>Latest fashion styles</p>
+<div class="price">KSh 1,500</div>
+<div class="product-buttons">
+<button class="cart-btn" onclick="addToCart('New Arrival',1500,'product-9.jpg')">🛒 Add to Cart</button>
+<a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20the%20New%20Arrival.">💬 WhatsApp</a>
+</div>
+</div><!-- PRODUCT 10 --><div class="product" data-name="Classic Footwear" data-category="shoes men women" data-price="1200">
+<img src="product-10.jpg" alt="Classic Footwear at Royal Fashions" loading="lazy">
+<h3>Classic Footwear</h3>
+<p>Quality and style</p>
+<div class="price">KSh 1,200</div>
+<div class="product-buttons">
+<button class="cart-btn" onclick="addToCart('Classic Footwear',1200,'product-10.jpg')">🛒 Add to Cart</button>
+<a class="order-btn" href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20am%20interested%20in%20Classic%20Footwear.">💬 WhatsApp</a>
+</div>
+</div></div>
+</section><section class="trust-section"><div class="section-title">
+<h2>Why Shop <span>Royal Fashions?</span></h2>
+<div class="gold-line"></div>
+</div><div class="trust-grid"><div class="trust-card">
+<div class="big-icon">👑</div>
+<h3>Quality Fashion</h3>
+<p>Beautiful styles selected for your wardrobe.</p>
+</div><div class="trust-card">
+<div class="big-icon">💰</div>
+<h3>Affordable Prices</h3>
+<p>Great fashion without unnecessary high prices.</p>
+</div><div class="trust-card">
+<div class="big-icon">💬</div>
+<h3>Easy Ordering</h3>
+<p>Order through our website or WhatsApp.</p>
+</div><div class="trust-card">
+<div class="big-icon">🚚</div>
+<h3>Convenient Shopping</h3>
+<p>Arrange collection or delivery with us.</p>
+</div></div>
+</section><section class="about" id="about"><h2>About Royal Fashions</h2><p>
+Royal Fashions brings stylish and quality footwear to customers looking for great fashion, comfort and value. We serve customers in Thika and beyond, making it easy to discover your next favourite style and order directly through WhatsApp.
+</p></section><section class="contact" id="contact"><h2>Visit & Contact Us</h2><p class="contact-subtitle">
+Ready to shop? Contact Royal Fashions today.
+</p><div class="contact-grid"><div class="contact-card"><h3>📞 Contact Details</h3><p>
+📍 <strong>Location:</strong><br>
+Neema Plaza, Opposite Zuhura Plaza,<br>
+Kenyatta Highway, Thika, Kenya
+</p><p>
+📱 <strong>Phone:</strong>
+<a href="tel:+254102160263">+254 102 160 263</a>
+</p><p>
+💬 <strong>WhatsApp:</strong>
+<a href="https://wa.me/254102160263">Chat with us</a>
+</p><div class="hours"><h3>🕐 Opening Hours</h3><p>
+<strong>Monday – Friday:</strong> 8:00 AM – 8:00 PM<br>
+<strong>Saturday:</strong> 8:00 AM – 5:00 PM<br>
+<strong>Sunday:</strong> 2:00 PM – 8:00 PM
+</p></div><br><a class="btn btn-whatsapp" href="https://wa.me/254102160263">
+💬 CHAT WITH US
+</a></div><div class="map-box"><div><h3>📍 Find Royal Fashions</h3><p>
+Neema Plaza, Opposite Zuhura Plaza<br>
+Kenyatta Highway, Thika
+</p><a class="btn" href="https://maps.app.goo.gl/DNDVSNcgLGhLmZ2KA" target="_blank" rel="noopener">
+🗺️ GET DIRECTIONS
+</a></div></div></div>
+</section><!-- MPESA --><section class="mpesa-section" id="mpesa"><div class="mpesa-container"><div class="mpesa-icon">💳</div><h2>Pay with <span>M-Pesa</span></h2><div class="gold-line"></div><p class="mpesa-subtitle">
+Ready to complete your order? Pay conveniently via M-Pesa and send us your payment confirmation.
+</p><div class="mpesa-card"><div class="mpesa-label">
+M-PESA PAYMENT NUMBER
+</div><div class="mpesa-number">
+010 216 0263
+</div><p>
+Please confirm your order and total amount with <strong>Royal Fashions</strong> before making payment.
+</p><div class="mpesa-steps"><div><strong>1.</strong> Confirm your order with us.</div>
+<div><strong>2.</strong> Send the agreed amount via M-Pesa.</div>
+<div><strong>3.</strong> Send your M-Pesa confirmation message to us.</div></div><div class="mpesa-buttons"><a href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20have%20made%20an%20M-Pesa%20payment.%20Please%20confirm%20my%20order." class="mpesa-whatsapp">
+💬 SEND PAYMENT CONFIRMATION
+</a><a href="tel:+254102160263" class="mpesa-call">
+📞 CALL TO CONFIRM
+</a></div><p class="mpesa-warning">
+🔒 For your security, only pay after confirming your order and payment details with Royal Fashions.
+</p></div></div>
+</section><!-- GOOGLE REVIEWS --><section class="google-reviews" id="reviews"><h2>Love Royal <span>Fashions?</span></h2><div class="google-stars">
+★★★★★
+</div><p>
+Your feedback helps other customers discover Royal Fashions. If you have purchased from us, please leave us an honest Google review.
+</p><div class="review-buttons"><a class="google-btn"
+href="https://maps.app.goo.gl/DNDVSNcgLGhLmZ2KA"
+target="_blank"
+rel="noopener">
+⭐ Leave a Google Review
+</a>
+
+<a class="btn"
+href="https://maps.app.goo.gl/DNDVSNcgLGhLmZ2KA"
+target="_blank"
+rel="noopener">
+📍 View Us on Google Maps
+</a>
+
+</div><div class="review-boxes"><div class="customer-review">
+<div class="stars">★★★★★</div>
+<p>Great service and beautiful footwear.</p>
+<strong>Customer Review</strong>
+</div><div class="customer-review">
+<div class="stars">★★★★★</div>
+<p>Quality products and friendly service.</p>
+<strong>Customer Review</strong>
+</div><div class="customer-review">
+<div class="stars">★★★★★</div>
+<p>Easy to order and good customer service.</p>
+<strong>Customer Review</strong>
+</div></div></section><section class="final-cta"><h2>Ready to Find Your Style?</h2><p>
+Browse our collection, add products to your cart and send your order directly to WhatsApp.
+</p><div class="hero-buttons"><a href="#products" class="btn btn-dark">
+🛍️ SHOP NOW
+</a><a href="#mpesa" class="btn">
+💳 PAY WITH M-PESA
+</a><a href="https://wa.me/254102160263?text=Hello%20Royal%20Fashions,%20I%20would%20like%20to%20shop.%20Please%20help%20me." class="btn btn-whatsapp">
+💬 WHATSAPP US
+</a></div></section><footer><p>
+© 2026 <strong>Royal Fashions</strong>. All Rights Reserved.
+</p><p>
+📍 Neema Plaza, Opposite Zuhura Plaza, Kenyatta Highway, Thika, Kenya
+</p><p>
+🕐 Mon–Fri: 8AM–8PM | Sat: 8AM–5PM | Sun: 2PM–8PM
+</p><p>
+💳 M-Pesa: <strong>010 216 0263</strong>
+</p></footer><!-- FLOATING CART --><div class="cart-floating" onclick="openCart()" aria-label="Shopping cart">
+🛒
+<span class="cart-count" id="cartCount">0</span>
+</div><!-- CART OVERLAY --><div class="cart-overlay" id="cartOverlay" onclick="closeCart(event)"><div class="cart-panel" onclick="event.stopPropagation()"><div class="cart-header"><h2>🛒 Your Cart</h2><button class="close-cart" onclick="closeCart()">
+×
+</button></div><div id="cartItems">
+<p style="text-align:center;color:#777;padding:30px 0;">
+Your cart is empty.
+</p>
+</div><div class="cart-total">
+Total: KSh <span id="cartTotal">0</span>
+</div><button class="checkout-btn" onclick="showCheckout()">
+🧾 CHECKOUT
+</button><div class="checkout" id="checkout"><h3>Customer Details</h3><input type="text" id="customerName" placeholder="Full name"><input type="tel" id="customerPhone" placeholder="Phone number"><select id="deliveryOption">
+<option value="">Select delivery option</option>
+<option>Collection from Royal Fashions - Thika</option>
+<option>Delivery - Thika</option>
+<option>Delivery - Outside Thika</option>
+</select><input type="text" id="deliveryLocation" placeholder="Delivery location / estate"><textarea id="orderNotes" placeholder="Order notes (size, colour, preferred style etc.)"></textarea><button class="place-order" onclick="placeOrder()">
+💬 PLACE ORDER ON WHATSAPP
+</button></div></div></div><div class="mobile-contact"><a class="mobile-whatsapp"
+href="https://wa.me/254102160263">
+💬 WHATSAPP
+</a>
+
+<a class="mobile-call"
+href="tel:+254102160263">
+📞 CALL NOW
+</a>
+
+</div><script>
+
+let cart=[];
+
+let selectedCategory="all";
+
+function addToCart(name,price,image){
+
+let existing=cart.find(item=>item.name===name);
+
+if(existing){
+
+existing.quantity++;
+
+}else{
+
+cart.push({
+name:name,
+price:price,
+image:image,
+quantity:1
+});
+
+}
+
+updateCart();
+
+openCart();
+
+}
+
+function updateCart(){
+
+let container=document.getElementById("cartItems");
+
+let count=document.getElementById("cartCount");
+
+let total=document.getElementById("cartTotal");
+
+let itemCount=cart.reduce((sum,item)=>sum+item.quantity,0);
+
+count.textContent=itemCount;
+
+if(cart.length===0){
+
+container.innerHTML=
+'<p style="text-align:center;color:#777;padding:30px 0;">Your cart is empty.</p>';
+
+total.textContent="0";
+
+return;
+
+}
+
+let html="";
+
+let grandTotal=0;
+
+cart.forEach((item,index)=>{
+
+let subtotal=item.price*item.quantity;
+
+grandTotal+=subtotal;
+
+html+=`
+
+<div class="cart-item">
+
+<img src="${item.image}" alt="${item.name}">
+
+<div>
+
+<h4>${item.name}</h4>
+
+<div class="cart-item-price">
+KSh ${item.price.toLocaleString()}
+</div>
+
+<div class="quantity">
+
+<button onclick="changeQuantity(${index},-1)">−</button>
+
+<strong>${item.quantity}</strong>
+
+<button onclick="changeQuantity(${index},1)">+</button>
+
+<button class="remove" onclick="removeItem(${index})">
+Remove
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+`;
+
+});
+
+container.innerHTML=html;
+
+total.textContent=grandTotal.toLocaleString();
+
+}
+
+function changeQuantity(index,change){
+
+cart[index].quantity+=change;
+
+if(cart[index].quantity<=0){
+
+cart.splice(index,1);
+
+}
+
+updateCart();
+
+}
+
+function removeItem(index){
+
+cart.splice(index,1);
+
+updateCart();
+
+}
+
+function openCart(){
+
+document.getElementById("cartOverlay").style.display="block";
+
+}
+
+function closeCart(event){
+
+if(!event || event.target.id==="cartOverlay"){
+
+document.getElementById("cartOverlay").style.display="none";
+
+}
+
+}
+
+function showCheckout(){
+
+if(cart.length===0){
+
+alert("Please add a product to your cart first.");
+
+return;
+
+}
+
+let checkout=document.getElementById("checkout");
+
+checkout.style.display="block";
+
+checkout.scrollIntoView({
+behavior:"smooth",
+block:"nearest"
+});
+
+}
+
+function placeOrder(){
+
+if(cart.length===0){
+
+alert("Your cart is empty.");
+
+return;
+
+}
+
+let name=document.getElementById("customerName").value.trim();
+
+let phone=document.getElementById("customerPhone").value.trim();
+
+let delivery=document.getElementById("deliveryOption").value;
+
+let location=document.getElementById("deliveryLocation").value.trim();
+
+let notes=document.getElementById("orderNotes").value.trim();
+
+if(!name || !phone || !delivery){
+
+alert("Please enter your name, phone number and delivery option.");
+
+return;
+
+}
+
+let message="Hello Royal Fashions!%0A%0A";
+
+message+="🛍️ *NEW WEBSITE ORDER*%0A%0A";
+
+message+="👤 Customer: "+encodeURIComponent(name)+"%0A";
+
+message+="📱 Phone: "+encodeURIComponent(phone)+"%0A";
+
+message+="🚚 Delivery: "+encodeURIComponent(delivery)+"%0A";
+
+if(location){
+
+message+="📍 Location: "+encodeURIComponent(location)+"%0A";
+
+}
+
+message+="%0A🛒 *ORDER ITEMS*%0A";
+
+let total=0;
+
+cart.forEach(item=>{
+
+let subtotal=item.price*item.quantity;
+
+total+=subtotal;
+
+message+="%0A"+encodeURIComponent(item.name);
+
+message+=" × "+item.quantity;
+
+message+=" = KSh "+subtotal.toLocaleString();
+
+});
+
+message+="%0A%0A💰 *TOTAL: KSh "+total.toLocaleString()+"*%0A";
+
+if(notes){
+
+message+="%0A📝 Notes: "+encodeURIComponent(notes);
+
+}
+
+message+="%0A%0A💳 I will confirm M-Pesa payment after the order is confirmed.";
+
+let whatsappUrl="https://wa.me/254102160263?text="+message;
+
+window.open(whatsappUrl,"_blank");
+
+}
+
+function setCategory(category,button){
+
+selectedCategory=category;
+
+document.querySelectorAll(".category-btn").forEach(btn=>{
+btn.classList.remove("active");
+});
+
+button.classList.add("active");
+
+filterProducts();
+
+}
+
+function filterProducts(){
+
+let search=document.getElementById("searchInput").value.toLowerCase();
+
+document.querySelectorAll(".product").forEach(product=>{
+
+let name=product.dataset.name.toLowerCase();
+
+let categories=product.dataset.category.toLowerCase();
+
+let matchesSearch=name.includes(search);
+
+let matchesCategory=
+selectedCategory==="all" ||
+categories.includes(selectedCategory);
+
+product.style.display=
+matchesSearch && matchesCategory ? "" : "none";
+
+});
+
+}
+
+updateCart();
+
+</script></body>
 </html>
